@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.section-home {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.section-home h2 {
+    font-size: 2.5rem;
+}
+
+.section-home p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.section-home .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section-about, .section-services, .section-gallery, .section-contact {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.section-about h2, .section-services h2, .section-gallery h2, .section-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    flex-basis: 30%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section-contact form input, .section-contact form textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.section-contact form button {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .social-links li {
+    margin: 0 15px;
+}
+
+footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
