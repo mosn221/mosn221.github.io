@@ -5,65 +5,111 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #282c34;
+    color: white;
     padding: 1rem 0;
-    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .section-home {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    height: 100vh;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-home .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-content {
+    position: relative;
     text-align: center;
-    padding: 5rem 0;
+    z-index: 1;
 }
 
-.section-home h2 {
-    font-size: 2.5rem;
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.section-home p {
+.home-content h1 span {
+    color: #ff6600;
+}
+
+.home-content p {
     font-size: 1.5rem;
-    margin: 1rem 0;
 }
 
-.section-home .btn {
-    background-color: #ff6600;
-    color: #fff;
+.home-content .btn {
     padding: 1rem 2rem;
-    text-decoration: none;
+    background-color: #ff6600;
+    color: white;
+    border: none;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
-.section-about, .section-services, .section-gallery, .section-contact {
+.section-about, .section-services, .section-projects, .section-contact {
     padding: 3rem 0;
     text-align: center;
 }
 
-.section-about h2, .section-services h2, .section-gallery h2, .section-contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.about-images img {
+    width: 45%;
+    border-radius: 10px;
 }
 
 .service-container {
@@ -72,66 +118,57 @@ nav ul li a {
 }
 
 .service {
-    background-color: #f4f4f4;
+    text-align: center;
     padding: 2rem;
-    margin: 1rem;
+    background-color: #f4f4f4;
     border-radius: 10px;
+    margin: 1rem;
     flex-basis: 30%;
 }
 
-.gallery-container {
-    display: flex;
-    justify-content: space-around;
+.service img {
+    width: 80px;
+    margin-bottom: 1rem;
 }
 
-.gallery-container img {
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.project {
     width: 30%;
+}
+
+.project img {
+    width: 100%;
     border-radius: 10px;
 }
 
-.section-contact form {
+form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+    align-items: center;
 }
 
-.section-contact form input, .section-contact form textarea {
+form input, form textarea {
+    width: 80%;
     padding: 1rem;
     margin: 0.5rem 0;
-    border: 1px solid #ddd;
     border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: 1rem;
 }
 
-.section-contact form button {
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+form button {
+    padding: 1rem 2rem;
+    background-color: #282c34;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer .social-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-footer .social-links li {
-    margin: 0 15px;
-}
-
-footer .social-links li a {
-    color: #fff;
-    text-decoration: none;
-}
+    background-color
