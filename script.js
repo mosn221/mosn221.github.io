@@ -1,14 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll('nav ul li a');
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
 
-    // Smooth scrolling
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    alert(`Merci ${name}, nous avons bien reçu votre message !`);
+    this.reset();
 });
