@@ -1,10 +1,18 @@
+/**
+* Template Name: Arsha
+* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Oxygen",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Quicksand","Jost",  sans-serif;
   --nav-font: "Quicksand","Poppins",  sans-serif;
 }
@@ -495,11 +503,11 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Footer 
+# Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: #1c2143;
-  background-color: #fff9e6;
+  color: var(--default-color);
+  background-color: var(--background-color);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -569,9 +577,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, #1c2143, transparent 1%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
-  color: color-mix(in srgb, #1c2143, transparent 1%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -617,7 +625,7 @@ h6 {
 
 .footer .footer-links ul a {
   display: inline-block;
-  color: color-mix(in srgb, var(--accent-color), transparent 0%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1;
 }
 
@@ -1394,7 +1402,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  background-color: #fff5d3;
+  background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 5px;
@@ -1823,8 +1831,8 @@ section,
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  border-top: 3px solid #75e6da;
-  border-bottom: 3px solid #75e6da;
+  border-top: 3px solid #feda5e;
+  border-bottom: 3px solid #feda5e;
   padding: 30px;
   height: 100%;
 }
@@ -1868,15 +1876,15 @@ section,
 
 .contact .info-item:hover i {
   background: var(--accent-color);
-  color: #75e6da;
+  color: #feda5e;
 }
 
 .contact .php-email-form {
   background-color: var(--surface-color);
   height: 100%;
   padding: 30px;
-  border-top: 3px solid #75e6da;
-  border-bottom: 3px solid #75e6da;
+  border-top: 3px solid #feda5e;
+  border-bottom: 3px solid #feda5e;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
