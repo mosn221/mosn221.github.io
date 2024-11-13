@@ -1465,7 +1465,7 @@ section,
   display: block;
   width: 50px;
   height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 85%);
+  background: color-mix(in srgb,  #feda5e, transparent 85%);
   bottom: 0;
   left: 0;
 }
