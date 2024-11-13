@@ -500,6 +500,10 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  .btn-getstarted {
+   display:None;
+   }
 }
 
 /*--------------------------------------------------------------
