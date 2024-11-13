@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+Bienvenue sur le site de PyCodeGROUP
 
-Template Name: Arsha
-Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Startup orienté dans la data au Sénégal impliqué dans plusieurs sujets
+
+Description plus détaillée à venir
