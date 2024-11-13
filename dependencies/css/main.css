@@ -507,7 +507,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #fffefa;
+  background-color: #fff5d3;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -1402,7 +1402,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  background-color: var(--surface-color);
+  background-color: #fff5d3;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 5px;
