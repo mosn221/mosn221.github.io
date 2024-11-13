@@ -212,7 +212,7 @@ h6 {
 }
 
 .events-page .header {
-  --background-color: rgba(255, 255, 255, 0.5);
+  --background-color: rgba(255, 255, 255, 0);
   --heading-color: #ffffff;
   --nav-color: #ffffff;
 }
@@ -512,6 +512,10 @@ h6 {
   .btn-getstarted {
    display:None;
    }
+
+ .events-page .header {
+ display : None;
+}
 }
 
 /*--------------------------------------------------------------
