@@ -2071,6 +2071,10 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
 body {
+  .container {
+     float: left;
+  width: 33.33%;
+  }
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -2088,6 +2092,10 @@ body {
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      .blog-post:after {
+            content: "";
+            display: table;
+            clear: both;
         }
         .blog-post img {
             width: 100%;
