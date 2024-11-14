@@ -78,50 +78,71 @@
 
       <div class="container" data-aos="fade-up">
         <p>Events we participate and contribute
-		<div class="blog-post">
-    <img src="dependencies/img/data-event-board.jpg" alt="Blog Post Image">
-    <h2>Blog Post Title</h2>
-    <p class="content-preview">This is a short preview of the blog post content. It gives a quick idea of the topic covered in the article...</p>
-    <div class="content-full">
-        <p>This is the full content of the blog post. It contains all the details and information for the reader.</p>
-        <p>Continue writing your full article content here...</p>
+		<!-- Blog Post 1 -->
+    <div class="blog-post">
+        <img src="image1.jpg" alt="Blog Post Image 1">
+        <div class="content">
+            <div class="title">Blog Post Title 1</div>
+            <div class="description">This is a brief description of the first blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 1. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
     </div>
-    <button class="read-more-btn" onclick="toggleContent()">Read More</button>
-</div>
-	      <div class="blog-post">
-    <img src="dependencies/img/data-event-board.jpg" alt="Blog Post Image">
-    <h2>Blog Post Title</h2>
-    <p class="content-preview">This is a short preview of the blog post content. It gives a quick idea of the topic covered in the article...</p>
-    <div class="content-full">
-        <p>This is the full content of the blog post. It contains all the details and information for the reader.</p>
-        <p>Continue writing your full article content here...</p>
-    </div>
-    <button class="read-more-btn" onclick="toggleContent()">Read More</button>
-</div>
-<div class="blog-post">
-    <img src="dependencies/img/data-event-board.jpg" alt="Blog Post Image">
-    <h2>Blog Post Title</h2>
-    <p class="content-preview">This is a short preview of the blog post content. It gives a quick idea of the topic covered in the article...</p>
-    <div class="content-full">
-        <p>This is the full content of the blog post. It contains all the details and information for the reader.</p>
-        <p>Continue writing your full article content here...</p>
-    </div>
-    <button class="read-more-btn" onclick="toggleContent()">Read More</button>
-</div>
 
-<script>
-    function toggleContent() {
-        const fullContent = document.querySelector('.content-full');
-        const readMoreBtn = document.querySelector('.read-more-btn');
-        if (fullContent.style.display === 'none' || fullContent.style.display === '') {
-            fullContent.style.display = 'block';
-            readMoreBtn.textContent = 'Read Less';
-        } else {
-            fullContent.style.display = 'none';
-            readMoreBtn.textContent = 'Read More';
-        }
-    }
-</script>
+    <!-- Blog Post 2 -->
+    <div class="blog-post">
+        <img src="image2.jpg" alt="Blog Post Image 2">
+        <div class="content">
+            <div class="title">Blog Post Title 2</div>
+            <div class="description">This is a brief description of the second blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 2. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+    </div>
+
+    <!-- Blog Post 3 -->
+    <div class="blog-post">
+        <img src="image3.jpg" alt="Blog Post Image 3">
+        <div class="content">
+            <div class="title">Blog Post Title 3</div>
+            <div class="description">This is a brief description of the third blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 3. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+    </div>
+
+    <!-- Blog Post 4 -->
+    <div class="blog-post">
+        <img src="image4.jpg" alt="Blog Post Image 4">
+        <div class="content">
+            <div class="title">Blog Post Title 4</div>
+            <div class="description">This is a brief description of the fourth blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 4. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+    </div>
+
+    <!-- Blog Post 5 -->
+    <div class="blog-post">
+        <img src="image5.jpg" alt="Blog Post Image 5">
+        <div class="content">
+            <div class="title">Blog Post Title 5</div>
+            <div class="description">This is a brief description of the fifth blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 5. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+    </div>
+
+    <!-- Blog Post 6 -->
+    <div class="blog-post">
+        <img src="image6.jpg" alt="Blog Post Image 6">
+        <div class="content">
+            <div class="title">Blog Post Title 6</div>
+            <div class="description">This is a brief description of the sixth blog post. Click to read more and learn about the details of this topic...</div>
+            <div class="full-text">This is the full content of Blog Post 6. Here you can add as much content as you like for readers to fully understand the topic in detail.</div>
+            <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+    </div>
 	</p>
       </div>
 
@@ -205,7 +226,18 @@
 
   <!-- Main JS File -->
   <script src="dependencies/js/main.js"></script>
-
+	<script>
+    function toggleContent(button) {
+        const fullText = button.previousElementSibling;
+        if (fullText.style.display === 'none' || !fullText.style.display) {
+            fullText.style.display = 'block';
+            button.innerText = 'Read Less';
+        } else {
+            fullText.style.display = 'none';
+            button.innerText = 'Read More';
+        }
+    }
+</script>
 </body>
 
 </html>
