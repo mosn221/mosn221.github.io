@@ -1842,7 +1842,6 @@ section,
   border-bottom: 3px solid #fede71;
   padding: 30px;
   height: 100%;
-  display: center;
 }
 
 @media (max-width: 575px) {
