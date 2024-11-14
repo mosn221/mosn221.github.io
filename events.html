@@ -78,6 +78,30 @@
 
       <div class="container" data-aos="fade-up">
         <p>Events we participate and contribute
+		<div class="blog-post">
+    <img src="EquipeNationale.jpg" alt="Blog Post Image">
+    <h2>Blog Post Title</h2>
+    <p class="content-preview">This is a short preview of the blog post content. It gives a quick idea of the topic covered in the article...</p>
+    <div class="content-full">
+        <p>This is the full content of the blog post. It contains all the details and information for the reader.</p>
+        <p>Continue writing your full article content here...</p>
+    </div>
+    <button class="read-more-btn" onclick="toggleContent()">Read More</button>
+</div>
+
+<script>
+    function toggleContent() {
+        const fullContent = document.querySelector('.content-full');
+        const readMoreBtn = document.querySelector('.read-more-btn');
+        if (fullContent.style.display === 'none' || fullContent.style.display === '') {
+            fullContent.style.display = 'block';
+            readMoreBtn.textContent = 'Read Less';
+        } else {
+            fullContent.style.display = 'none';
+            readMoreBtn.textContent = 'Read More';
+        }
+    }
+</script>
 	</p>
       </div>
 
