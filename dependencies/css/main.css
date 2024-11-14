@@ -2070,5 +2070,11 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  .card
+	position : relative
+	height: 450px
+	width: 900px
+	margin : 200px auto
+	background-color : #FFF
+	-webkit-box-shadow: 10px 10px 93px 0px 
 }
