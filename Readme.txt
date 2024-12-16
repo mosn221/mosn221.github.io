@@ -1,23 +1,23 @@
-# 🌐 Bienvenue sur **PyCodeGroup.com** 🎉
+#🌐 Bienvenue sur **PyCodeGroup.com** 🎉
 
 Nous sommes une une startup innovante spécialisée dans la programmation **Python**, la **data science**, et l’**analyse de données**. Son objectif principal est de rendre la technologie accessible à tous, en offrant des solutions pour résoudre des problématiques complexes à travers des projets collaboratifs et l’utilisation de l'**intelligence artificielle**. ! 🚀
 
-## 🎯 Notre Mission
+##🎯 Notre Mission
 
 Chez **PyCodeGroup**, l'innovation et la création de solutions techniques autour de la programmation en Python, en particulier pour les projets de collecte et d'analyse de données sont au coeur de notre activité. 🌍
 
-## 🧑‍💻 Ce que nous proposons
+##🧑‍💻 Ce que nous proposons
 
-### 📚 **Des Cours et Formations**
+###📚 **Des Cours et Formations**
 Que vous soyez débutant ou expert, nous avons des **cours sur mesure** pour vous. Apprenez à votre rythme avec des tutoriels interactifs et des projets concrets ! 💡
 
-### 🔧 **Outils Python**
+###🔧 **Outils Python**
 Découvrez des **outils Python** puissants pour l’analyse de données, le machine learning, et bien plus encore. Des librairies comme Pandas, Matplotlib, Scikit-learn, et TensorFlow sont à portée de main. 🔍
 
-### ⚡ **Projets Collaboratifs**
+###⚡ **Projets Collaboratifs**
 Rejoignez notre communauté pour des **projets collaboratifs** où vous pourrez mettre en pratique vos compétences et développer des projets en équipe. 
 
-## 🌟 **Projets en Cours**
+##🌟 **Projets en Cours**
 
 1. **Ligue 1 Sénégalaise 2024-2025 ⚽**  
    Nous récoltons des données en temps réel sur le championnat de football sénégalais pour promouvoir la culture statistique et valoriser le football local à travers des analyses de données ! 📊📈
