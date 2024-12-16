@@ -31,7 +31,7 @@ Si vous êtes passionné par la data science, le machine learning ou la programm
 ---
 
 💬 **Contactez-nous :**  
-📧 Email : contact@pycodegroup.com  
+📧 Email : pycodegroup@gmail.com  
 🌍 Suivez-nous sur les réseaux sociaux :  
 - Twitter : [@PyCodeGroup](https://twitter.com/PyCodeGroup)  
 - LinkedIn : [PyCodeGroup](https://www.linkedin.com/company/pycodegroup)
