@@ -5,23 +5,27 @@
   position: fixed;
   top: 0;
   right: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #1c2143; /* Fond semi-transparent */
+  background-color: #1c2143; /* Fond personnalisé */
   color: white;
   padding: 10px;
   font-size: 14px;
   z-index: 1000; /* S'assurer que le bandeau est au-dessus du contenu */
-  text-align: right;
+  text-align: right; /* Aligner le texte à droite */
+  width: 100%; /* S'assurer que le bandeau occupe toute la largeur */
+  font-family: 'Quicksand', sans-serif; /* Police Quicksand */
 }
 
+/* Style des liens dans le bandeau */
 .language-banner a {
   color: white;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 10px; /* Espace entre les liens */
+  transition: color 0.3s ease; /* Animation fluide au survol */
 }
 
+/* Effet de survol */
 .language-banner a:hover {
-  text-decoration: underline;
+  color: #f39c12; /* Couleur au survol, ici un orange doré */
 }
 
 * {
