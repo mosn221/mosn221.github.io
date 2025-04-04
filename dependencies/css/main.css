@@ -11,32 +11,28 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Style du bandeau de langue */
-.language-banner {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #1c2143; /* Fond personnalisé */
-  color: white;
-  padding: 2px;
-  font-size: 10px;
-  z-index: 1000; /* S'assurer que le bandeau est au-dessus du contenu */
-  text-align: right; /* Aligner le texte à droite */
-  width: 50%; /* S'assurer que le bandeau occupe la moitié de la largeur */
-  font-family: 'Quicksand', sans-serif; /* Police Quicksand */
-}
+ /* Conteneur du bouton de langue */
+    .language-switcher {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-family: Arial, sans-serif;
+    }
 
-/* Style des liens dans le bandeau */
-.language-banner a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px; /* Espace entre les liens */
-  transition: color 0.3s ease; /* Animation fluide au survol */
-}
+    .language-switcher a {
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: bold;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-/* Effet de survol */
-.language-banner a:hover {
-  color: #34dac9; /* Couleur au survol, ici un orange doré */
-}
+    .language-switcher a:hover {
+      background-color: #f0f0f0;
+    }
 
 /* Fonts */
 :root {
