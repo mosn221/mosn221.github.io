@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PyCodeGroup</title>
+  <style>
+    /* Style général */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Conteneur du switcher de langue */
+    .language-switcher {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .language-switcher a {
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: bold;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .language-switcher a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Titre centré (optionnel) */
+    .main-content {
+      text-align: center;
+      margin-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sélecteur de langue -->
+  <div class="language-switcher">
+    <a href="/fr/index.html">🇫🇷 FR</a>
+    <a href="/en/index.html">🇬🇧 EN</a>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="main-content">
+    <h1>Welcome to PyCodeGroup</h1>
+    <p>Please select your language above.</p>
+  </div>
+</body>
+</html>
