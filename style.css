@@ -1,4 +1,27 @@
 /* Global Styles */
+
+/* Style du bandeau de langue */
+.language-banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  z-index: 1000; /* S'assurer que le bandeau est au-dessus du contenu */
+}
+
+.language-banner a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.language-banner a:hover {
+  text-decoration: underline;
+}
+
 * {
     margin: 0;
     padding: 0;
