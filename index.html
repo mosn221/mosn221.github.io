@@ -12,16 +12,16 @@
 
     // Dictionnaire de redirection selon la langue
     const redirects = {
-      fr: "/fr/",
-      en: "/en/",
+      fr: "/fr/index.html",
+      en: "/en/index.html",
     };
 
     // Redirection si la langue est reconnue, sinon redirection par défaut (en)
-    const target = redirects[shortLang] || "/en/";
+    const target = redirects[shortLang] || "/en/index.html";
     window.location.replace(target);
   </script>
 </head>
 <body>
-  <p>Redirection en cours... Si vous n'êtes pas redirigé automatiquement, <a href="/en/">cliquez ici</a>.</p>
+  <p>Redirection en cours... Si vous n'êtes pas redirigé automatiquement, <a href="/en/index.html">cliquez ici</a>.</p>
 </body>
 </html>
