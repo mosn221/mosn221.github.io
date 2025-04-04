@@ -15,7 +15,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #bee7e8; /* Fond personnalisé */
+  background-color: #1c2143; /* Fond personnalisé */
   color: white;
   padding: 2px;
   font-size: 10px;
@@ -35,7 +35,7 @@
 
 /* Effet de survol */
 .language-banner a:hover {
-  color: #f39c12; /* Couleur au survol, ici un orange doré */
+  color: #34dac9; /* Couleur au survol, ici un orange doré */
 }
 
 /* Fonts */
