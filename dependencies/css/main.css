@@ -17,8 +17,8 @@
   right: 0;
   background-color: #1c2143; /* Fond personnalisé */
   color: white;
-  padding: 5px;
-  font-size: 7px;
+  padding: 2px;
+  font-size: 10px;
   z-index: 1000; /* S'assurer que le bandeau est au-dessus du contenu */
   text-align: right; /* Aligner le texte à droite */
   width: 100%; /* S'assurer que le bandeau occupe toute la largeur */
