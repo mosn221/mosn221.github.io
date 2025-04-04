@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PyCodeGROUP</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="dependencies/img/favicon.png" rel="icon">
+  <link href="dependencies/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="dependencies/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dependencies/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="dependencies/aos/aos.css" rel="stylesheet">
+  <link href="dependencies/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="dependencies/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="dependencies/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="dependencies/img/logo.png" alt="">
+        <h1 class="sitename">PyCodeGROUP</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Accueil</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+	  <li><a href="events.html">Events</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+	<a class="btn-getstarted" href="#call-to-action">Get Started</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+	  
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Exploitez tout le potentiel de vos données pour booster votre activité</h1>
+            <p>Avec notre équipe passionnée de data scientists et d’analystes métier</p>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="dependencies/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="dependencies/img/clients/client-7.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>À propos de nous</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p style="text-align: justify;">
+		Chez PyCodeGroup, nous sommes passionnés par l’exploitation de la puissance de Python pour fournir des solutions logicielles innovantes. 
+		
+		
+            </p>
+            <ul>
+              	<li><i class="bi bi-check2-circle"></i> <span>Offrir des solutions logicielles de haut niveau avec souci du détail et de la qualité</span></li>
+              	<li><i class="bi bi-check2-circle"></i> <span>Collaborer étroitement avec les clients pour bien comprendre et satisfaire leurs besoins</span></li>
+		<li><i class="bi bi-check2-circle"></i> <span>Bâtir une relation de confiance grâce à la transparence et à un service fiable</span></li>
+            </ul>
+          </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p style="text-align: justify;">Qu’il s’agisse de développement web, de data science ou d’intelligence décisionnelle, nous mettons tout en œuvre pour répondre aux besoins uniques de nos clients à l’aide des technologies de pointe et des meilleures pratiques. 
+	Nous croyons en la collaboration, la qualité, et la livraison de résultats concrets qui créent de la valeur.</p>
+	<p style="text-align: justify;">Notre expertise diversifiée nous permet de relever des défis complexes tout en livrant des solutions de qualité, à fort impact réel.</p>
+        </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Envie d’en savoir plus sur </span><strong>nos activités et projets ?</strong></h3>
+              <p>
+               Chez PyCodeGroup, nous croyons au potentiel de la technologie pour transformer des vies, et nous sommes déterminés à faire une différence positive à travers notre travail.
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> Comment PyCodeGroup gère les délais et la livraison des projets ?</h3>
+                <div class="faq-content">
+                  <p>Nous commençons chaque projet par une consultation détaillée pour comprendre vos objectifs. Ensuite, nous élaborons une feuille de route claire avec des échéances et des jalons. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span> Quelles technologies PyCodeGroup maîtrise-t-il ?</h3>
+                <div class="faq-content">
+                  <p>Notre équipe est spécialisée en Python, ses frameworks et les outils data pour l’analyse, l’IA, l'intelligence des affaires, et le machine learning. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span>Que dire de nos projets internes ?</h3>
+                <div class="faq-content">
+                  <p>Nos projets internes exploitent la data, le machine learning et l’IA pour concevoir des solutions digitales innovantes et durables, au service du progrès social et économique.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="dependencies/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="dependencies/img/skills.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Compétences</h3>
+            <p class="fst-italic">
+             Grâce à notre politique d’apprentissage continu, notre éventail de compétences s’enrichit constamment de nouvelles technologies pour concevoir des solutions digitales performantes.
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>Business Intelligence</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Science des données</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Web & Mobile</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+		<div class="progress">
+                <span class="skill"><span>Administration de base de données</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+		<div class="progress">
+                <span class="skill"><span>Infrastructure Cloud</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+	  
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Un aperçu de ce que nous proposons :</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
+              <h4><a href="service-bi.html" class="stretched-link">Business Intelligence</a></h4>
+              <p>Comprenez votre activité et définissez une stratégie efficace</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box icon"></i></div>
+              <h4><a href="service-datascience.html" class="stretched-link">Science des données</a></h4>
+              <p>Développez des modèles prédictifs pour anticiper le monde</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-code icon"></i></div>
+              <h4><a href="service-webapp.html" class="stretched-link">Web & App</a></h4>
+              <p>Numérisez votre activité avec un site web et une application mobile professionnels</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-database-fill-gear icon"></i></div>
+              <h4><a href="service-database.html" class="stretched-link">Base de données</a></h4>
+              <p>Gérez vos flux de données et assurez leur bonne administration</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="dependencies/img/ct-bg.png" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Lancez-vous</h3>
+            <p>Libérez tout le potentiel de vos données et de votre entreprise avec nos solutions de pointe. Collaborez avec nous dès aujourd’hui pour transformer vos données en décisions intelligentes.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Soumettre mon projet</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Découvrez comment nous transformons des données complexes et des idées web ambitieuses en réalité</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-bi">Business intelligence</li>
+            <li data-filter=".filter-datascience">Science des données</li>
+            <li data-filter=".filter-database">Base de données</li>
+		<li data-filter=".filter-webapp">Web&App</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi">
+              <img src="dependencies/img/masonry-portfolio/humanresources.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Handling human resources</h4>
+                <p>Business intelligence insights for HR service</p>
+                <a href="dependencies/img/masonry-portfolio/humanresources.png" title="Human resources" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="rh-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+           <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi">
+              <img src="dependencies/img/masonry-portfolio/e-commerce.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>E-commerce</h4>
+                <p>Sales data analysis</p>
+                <a href="dependencies/img/masonry-portfolio/e-commerce.png" title="E-commerce" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="e-commerce-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-database">
+              <img src="dependencies/img/masonry-portfolio/championnatlocal.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Domestic football data</h4>
+                <p>Football championship dataset</p>
+                <a href="dependencies/img/masonry-portfolio/championnatlocal.png" title="Domestic football data" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="senegalese-league-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-database">
+              <img src="dependencies/img/masonry-portfolio/EquipeNationale.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>National football data</h4>
+                <p>Senegalese national football history with data</p>
+                <a href="dependencies/img/masonry-portfolio/EquipeNationale.jpg" title="National football data" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="national-football-team-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi">
+              <img src="dependencies/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RH Insights</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="dependencies/img/masonry-portfolio/masonry-portfolio-5.jpg" title="RH Insights" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+              <img src="dependencies/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>WebApp 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="dependencies/img/masonry-portfolio/masonry-portfolio-6.jpg" title="WebApp 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+          <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+              <img src="dependencies/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>WebApp 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="dependencies/img/masonry-portfolio/masonry-portfolio-7.jpg" title="WebApp 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+          <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-datascience">
+              <img src="dependencies/img/masonry-portfolio/predictiveagriculture.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Predictive agriculture</h4>
+                <p>Modeling agriculture plan with data science</p>
+                <a href="dependencies/img/masonry-portfolio/predictiveagriculture.png" title="Agriculture predictive model" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="agriculture-prediction-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-datascience">
+              <img src="dependencies/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Datascience 4</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="dependencies/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Datascience 4" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Pour tout besoin de collaboration, n'hésitez pas à nous contacter. Notre équipe sera ravie d'échanger avec vous sur des projets, des données et des idées créatives.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Adresse</h3>
+                  <p>Hann, Dakar, Sénégal</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Appelez-nous</h3>
+                  <p>+221 75 631 05 91</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Ecrivez-nous</h3>
+                  <p>pycodegroup@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30869.59009704642!2d-17.448656367639284!3d14.72961554509639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1732b15e65171%3A0x1d5aafa6592ab534!2zSGFubiwgRGFrYXIsIFPDqW7DqWdhbA!5e0!3m2!1sfr!2sfr!4v1727646170682!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        <!--   <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+ 
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">PyCodeGROUP</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Hann, Dakar</p>
+            <p>Sénégal</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+221 75 631 05 91</span></p>
+            <p><strong>Email:</strong> <span>pycodegroup@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+	    <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+	    <li><i class="bi bi-chevron-right"></i> <a href="events.html">Events</a></li>
+	<li><i class="bi bi-chevron-right"></i> <a href="privacy.html">Privacy & Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-bi.html">Business intelligence</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-datascience.html">Science des données</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-webapp.html">Web & App</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-database.html">Database</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p style="text-align: justify;">Join our growing community on social media to stay updated with the latest news, explore our latest projects and get exclusive content on web development, data science and digital transformation.</p>
+          <div class="social-links d-flex">
+            <a href="https://x.com/pycodegroup"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/company/pycodegroup"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PyCodeGROUP 2025</strong> <span>Tous droits reservés</span></p>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="dependencies/php-email-form/validate.js"></script>
+  <script src="dependencies/aos/aos.js"></script>
+  <script src="dependencies/glightbox/js/glightbox.min.js"></script>
+  <script src="dependencies/swiper/swiper-bundle.min.js"></script>
+  <script src="dependencies/waypoints/noframework.waypoints.js"></script>
+  <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="dependencies/js/main.js"></script>
+
+</body>
+
+</html>
