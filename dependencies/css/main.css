@@ -21,7 +21,7 @@
   font-size: 10px;
   z-index: 1000; /* S'assurer que le bandeau est au-dessus du contenu */
   text-align: right; /* Aligner le texte à droite */
-  width: 100%; /* S'assurer que le bandeau occupe toute la largeur */
+  width: 50%; /* S'assurer que le bandeau occupe la moitié de la largeur */
   font-family: 'Quicksand', sans-serif; /* Police Quicksand */
 }
 
