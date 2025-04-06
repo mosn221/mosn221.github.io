@@ -10,13 +10,11 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Style du bandeau de langue */
- /* Conteneur du bouton de langue */
+/* Conteneur du switcher de langue */
     .language-switcher {
       position: absolute;
       top: 1rem;
       right: 1rem;
-      font-family: Arial, sans-serif;
     }
 
     .language-switcher a {
