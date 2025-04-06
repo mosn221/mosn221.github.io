@@ -1,0 +1,13 @@
+
+.fi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 3px;
+}
+.fi-fr { background-image: url('../flags/1x1/fr.svg'); }
+.fi-gb { background-image: url('../flags/1x1/gb.svg'); }
+.fi-sn { background-image: url('../flags/1x1/sn.svg'); }
