@@ -525,7 +525,13 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+/* Cacher le bouton "Scroll to Top" sur mobile */
+	<style>
+@media (max-width: 576px) {
+  .scroll-to-top {
+    display: none !important; /* Cacher le bouton "Scroll to Top" */
+  }
+	</style>
   <!-- Preloader -->
   <div id="preloader"></div>
 
@@ -579,18 +585,16 @@
 /* Mobile : n’affiche que l’icône */
 /* Bulle ronde sur mobile */
 @media (max-width: 576px) {
-  .whatsapp-banner {
+ .whatsapp-banner {
+    bottom: 20px; /* Position par défaut pour mobile */
+    right: 20px; /* À droite sur mobile */
     padding: 12px;
     border-radius: 50%;
-    right: 70px; /* Garde la position à 20px à droite sur mobile */
-	bottom : 9px /* pour la hauteur*/
     width: 50px;
     height: 50px;
     justify-content: center;
   }
-  .whatsapp-banner span {
-    display: none !important; /* Masque le texte sur mobile */
-  }
+  
 }
 </style>
 
