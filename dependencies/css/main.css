@@ -716,6 +716,14 @@ h6 {
   bottom: 15px;
 }
 
+@media (max-width: 576px) {
+  .scroll-top {
+    display: none !important; /* Cacher le bouton "Scroll to Top sur mobile" */
+  }
+
+/*--------------------------------------------------------------
+# Whatsapp button
+--------------------------------------------------------------*/
 
 .whatsapp-banner {
   position: fixed;
