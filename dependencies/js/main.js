@@ -221,6 +221,7 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+   });
 /*bouton whatsapp*/
 let whatsappButton = document.querySelector('.whatsapp-banner');
 
