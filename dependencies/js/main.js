@@ -222,3 +222,20 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// Lorsqu'on défile la page
+window.onscroll = function() {
+  var scrollTopBtn = document.querySelector('.scroll-top');
+  var whatsappBtn = document.querySelector('.whatsapp-banner');
+
+  // Si l'utilisateur défile de plus de 50px
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // Affiche le bouton Scroll to Top et WhatsApp
+    scrollTopBtn.classList.add('show-scroll-top');
+    whatsappBtn.classList.add('show-whatsapp');
+  } else {
+    // Cache les deux boutons lorsqu'on est en haut de la page
+    scrollTopBtn.classList.remove('show-scroll-top');
+    whatsappBtn.classList.remove('show-whatsapp');
+  }
+};
