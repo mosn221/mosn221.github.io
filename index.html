@@ -526,12 +526,7 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-	<style>
-@media (max-width: 576px) {
-  .scroll-top {
-    display: none !important; /* Cacher le bouton "Scroll to Top sur mobile" */
-  }
-	</style>
+	
   <!-- Preloader -->
   <div id="preloader"></div>
 
@@ -555,70 +550,6 @@
    <span class="fw-bold d-none d-sm-inline">How can I help you?</span>
 </a>
 
-<!-- Style personnalisé -->
-<style>
-/* Positionnement du bandeau WhatsApp */
-.whatsapp-banner {
-  bottom: 8.5px;
-  right: 70px; /* Décalé vers la gauche sur desktop (en augmentant la valeur, on décale plus à gauche) */
-  padding: 10px 16px;
-  background-color: #25D366;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  animation: bounce 2s infinite;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.whatsapp-banner:hover {
-  background-color: #1ebd5b;
-  text-decoration: none;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-
-/* Mobile : n’affiche que l’icône */
-/* Bulle ronde sur mobile */
-@media (max-width: 576px) {
- .whatsapp-banner {
-    bottom: 20px; /* Position par défaut pour mobile */
-    right: 20px; /* À droite sur mobile */
-    padding: 12px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-	 display: none; /* Cacher le bouton WhatsApp sur mobile au départ */
-  }
-	/* Afficher le bouton WhatsApp lors du défilement */
-  .show-whatsapp {
-    display: block !important;
-  
-}
-	/* Style initial : cacher les deux boutons par défaut */
-@media (min-width: 577px) {
-  .whatsapp-banner,
-  .scroll-top {
-    display: none; /* Cacher les deux boutons au départ */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    padding: 12px;
-    border-radius: 50%;
-  }
-
-  /* Affichage des boutons lorsque l'utilisateur défile */
-  .show-whatsapp,
-  .show-scroll-top {
-    display: block !important;
-  }
-}
 
 
 
