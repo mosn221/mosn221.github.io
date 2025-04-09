@@ -655,9 +655,10 @@
 
 <!-- Style personnalisé -->
 <style>
+/* Positionnement du bandeau WhatsApp */
 .whatsapp-banner {
   bottom: 20px;
-  right: 20px; /* ← was 30px, now a bit more to the left */
+  right: 30px; /* Décalé vers la gauche sur desktop (en augmentant la valeur, on décale plus à gauche) */
   padding: 10px 16px;
   background-color: #25D366;
   border-radius: 50px;
@@ -680,14 +681,18 @@
 }
 
 /* Mobile : n’affiche que l’icône */
+/* Bulle ronde sur mobile */
 @media (max-width: 576px) {
   .whatsapp-banner {
-    padding: 10px;
+    padding: 12px;
     border-radius: 50%;
-    right: 20px; /* sur mobile, recentre un peu plus */
+    right: 20px; /* Garde la position à 20px à droite sur mobile */
+    width: 50px;
+    height: 50px;
+    justify-content: center;
   }
   .whatsapp-banner span {
-    display: none !important;
+    display: none !important; /* Masque le texte sur mobile */
   }
 }
 </style>
