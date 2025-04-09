@@ -716,6 +716,47 @@ h6 {
   bottom: 15px;
 }
 
+
+.whatsapp-banner {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: #25D366;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.whatsapp-banner i {
+  font-size: 24px;
+  color: white;
+  line-height: 0;
+}
+
+.whatsapp-banner:hover {
+  background-color: #1ebd5a;
+}
+
+.whatsapp-banner.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  #whatsapp-button {
+    right: 70px; /* Décalage vers la gauche depuis le bord droit */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
