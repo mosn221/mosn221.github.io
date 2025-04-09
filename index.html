@@ -596,6 +596,48 @@
   }
   
 }
+	/* Style initial : cacher les deux boutons par défaut */
+@media (min-width: 577px) {
+  .whatsapp-banner,
+  .scroll-to-top {
+    display: none; /* Cacher les deux boutons au départ */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 12px;
+    border-radius: 50%;
+  }
+
+  /* Bouton WhatsApp */
+  .whatsapp-banner {
+    background-color: #25D366;
+  }
+
+  /* Bouton Scroll to Top */
+  .scroll-to-top {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* Affichage des boutons lorsque l'utilisateur défile */
+  .show-whatsapp,
+  .show-scroll-top {
+    display: block !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .whatsapp-banner {
+    display: none; /* Cacher le bouton WhatsApp sur mobile au départ */
+  }
+
+  /* Afficher le bouton WhatsApp lors du défilement */
+  .show-whatsapp {
+    display: block !important;
+  }
+}
+
 </style>
 
 
