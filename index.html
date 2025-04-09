@@ -41,11 +41,12 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-	  <li><a href="events.html">Events</a></li>
+          
+          
+          <li><a href="#portfolio">Projects</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#services">Services</a></li>
+	  <li><a href="events.html">News</a></li>
 	<li><a href="/fr/index.html">Français 🇫🇷</a></li>
 		
     
@@ -644,6 +645,50 @@
 
   <!-- Main JS File -->
   <script src="../dependencies/js/main.js"></script>
+<!-- Bandeau WhatsApp flottant et responsive -->
+<a href="https://wa.me/221771234567" 
+   class="whatsapp-banner d-flex align-items-center gap-2 text-white position-fixed"
+   target="_blank" aria-label="Contact WhatsApp">
+    <i class="bi bi-whatsapp fs-4"></i>
+    <span class="fw-bold d-none d-sm-inline">Discutons sur WhatsApp</span>
+</a>
+
+<!-- Style personnalisé -->
+<style>
+.whatsapp-banner {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #25D366;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: bounce 2s infinite;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.whatsapp-banner:hover {
+  text-decoration: none;
+  background-color: #1ebd5b;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Sur petits écrans, on affiche juste l’icône */
+@media (max-width: 576px) {
+  .whatsapp-banner {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .whatsapp-banner span {
+    display: none !important;
+  }
+}
+</style>
 
 </body>
 
