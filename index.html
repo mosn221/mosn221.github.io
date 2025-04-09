@@ -646,18 +646,18 @@
   <!-- Main JS File -->
   <script src="../dependencies/js/main.js"></script>
 <!-- Bandeau WhatsApp flottant et responsive -->
-<a href="https://wa.me/221771234567" 
+<a href="https://wa.me/221771234567?text=Hi%2C%20I%20visited%20your%20PyCodeGroup%20website%20and%20I%27d%20like%20to%20know%20more."
    class="whatsapp-banner d-flex align-items-center gap-2 text-white position-fixed"
-   target="_blank" aria-label="Contact WhatsApp">
-    <i class="bi bi-whatsapp fs-4"></i>
-    <span class="fw-bold d-none d-sm-inline">Discutons sur WhatsApp</span>
+   target="_blank" aria-label="Contact via WhatsApp">
+   <i class="bi bi-whatsapp fs-4"></i>
+   <span class="fw-bold d-none d-sm-inline">How can I help you?</span>
 </a>
 
 <!-- Style personnalisé -->
 <style>
 .whatsapp-banner {
   bottom: 20px;
-  right: 20px;
+  right: 30px; /* ← décalage vers la gauche (au lieu de 20px) */
   padding: 10px 16px;
   background-color: #25D366;
   border-radius: 50px;
@@ -666,11 +666,12 @@
   animation: bounce 2s infinite;
   font-size: 14px;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .whatsapp-banner:hover {
-  text-decoration: none;
   background-color: #1ebd5b;
+  text-decoration: none;
 }
 
 @keyframes bounce {
@@ -678,17 +679,19 @@
   50% { transform: translateY(-4px); }
 }
 
-/* Sur petits écrans, on affiche juste l’icône */
+/* Mobile : n’affiche que l’icône */
 @media (max-width: 576px) {
   .whatsapp-banner {
     padding: 10px;
     border-radius: 50%;
+    right: 20px; /* sur mobile, recentre un peu plus */
   }
   .whatsapp-banner span {
     display: none !important;
   }
 }
 </style>
+
 
 </body>
 
