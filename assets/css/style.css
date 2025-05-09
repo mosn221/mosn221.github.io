@@ -1,0 +1,118 @@
+/* Import Google Fonts */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F7FA;
+  color: #1A1A2E;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1A1A2E;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00BFA6;
+}
+
+nav a.cta {
+  background-color: #007C91;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+nav a.cta:hover {
+  background-color: #00BFA6;
+}
+
+/* Hero section */
+.hero {
+  background-color: #007C91;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Sections */
+section h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00BFA6;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* CTA Button */
+.btn-primary {
+  display: inline-block;
+  background-color: #007C91;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #00BFA6;
+}
+
+/* Footer */
+footer {
+  background-color: #1A1A2E;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
