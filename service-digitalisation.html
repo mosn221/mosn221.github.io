@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Digitalisation - PyCodeGroup</title>
+  <meta name="description" content="Digitalisation des processus en Afrique avec PyCodeGroup">
+  <meta name="keywords" content="digitalisation, Afrique, PyCodeGroup, transformation digitale">
+  <meta name="author" content="PyCodeGroup">
+  <meta property="og:title" content="Digitalisation - PyCodeGroup">
+  <meta property="og:description" content="Accélérer la transformation numérique en Afrique avec PyCodeGroup.">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('assets/img/afrique-digital.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 35vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-section h1,
+    .hero-section p {
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .hero-section {
+        height: 45vh;
+      }
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
+      .hero-section .container {
+        padding: 0 1rem;
+      }
+    }
+
+    .swiper-slide .card {
+  height: 100%;
+}
+.swiper-container {
+  padding-bottom: 20px;
+}
+  </style>
+  <!-- Swiper CSS -->
+
+
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo-header.png" alt="">
+        
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Bienvenue<br></a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Activités</a></li>
+          <li><a href="#portfolio">Projets</a></li>
+          
+          <li><a href="#">Actu</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#call-to-action">Contribuer</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero-section">
+      <div class="container text-center" data-aos="fade-in">
+        <h1 class="display-4 fw-bold" style="font-family: Montserrat;">Digitaliser pour transformer</h1>
+        <p class="lead" style="font-family: Poppins;">Des solutions numériques au service des territoires et des populations africaines</p>
+        <a href="#about" class="btn btn-outline-light mt-3"><i class="bi bi-arrow-down-circle"></i> En savoir plus</a>
+      </div>
+    </section>
+
+    <section class="section py-5">
+      <div class="container" style="padding: 80px;
+      background: color-mix(in srgb, var(--default-color), transparent 96%);
+      border-radius: 15px;">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/digital-afrique.jpg" alt="Illustration de la digitalisation des services par PyCodeGroup en Afrique" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 style="font-family: Montserrat; color: var(--heading-color);">Pourquoi digitaliser ?</h2>
+            <p style="color: var(--default-color); font-family: Poppins;">Dans un continent en pleine transformation, la digitalisation est un levier incontournable pour améliorer l'efficacité, renforcer la transparence et ouvrir de nouvelles opportunités pour les populations et les entreprises.</p>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success"></i> Gain de temps et automatisation</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success"></i> Traçabilité et transparence des données</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success"></i> Meilleure accessibilité aux services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-5 light-background">
+      <div class="container" style="padding: 80px;
+      background: color-mix(in srgb, var(--default-color), transparent 96%);
+      border-radius: 15px;">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+            <img src="assets/img/outil-numerique.jpg" alt="Outils numériques PyCodeGroup" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+            <h2 style="font-family: Montserrat; color: var(--heading-color); ">Nos axes d'action</h2>
+            <p style="font-family: Poppins; color: var(--default-color);">PyCodeGroup agit concrètement sur la digitalisation à travers :</p>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-cpu text-accent"></i> La conception d'applications web et mobiles</li>
+              <li class="mb-3"><i class="bi bi-cloud-upload text-accent"></i> L'hébergement et la sécurité des données</li>
+              <li class="mb-3"><i class="bi bi-bar-chart-line text-accent"></i> L'analyse et la valorisation des données</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 style="font-family: Montserrat; color: var(--heading-color);">Projets de digitalisation</h2>
+          <p style="font-family: Poppins; color: var(--default-color);">Des initiatives concrètes portées par PyCodeGroup</p>
+        </div>
+    
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+    
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm border-0">
+                <img src="assets/img/services-1.jpg" class="card-img-top" alt="Projet 1">
+                <div class="card-body">
+                  <a href="projet1.html" class="stretched-link text-decoration-none" style="color: var(--heading-color); font-family: Montserrat;">
+                    Plateforme municipale
+                  </a>
+                  <p class="card-text">Digitalisation des démarches administratives pour une commune.</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm border-0">
+                <img src="assets/img/services-2.jpg" class="card-img-top" alt="Projet 2">
+                <div class="card-body">
+                  <h5 class="card-title">Appli santé & nutrition</h5>
+                  <p class="card-text">Outil de suivi pour la santé communautaire.</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm border-0">
+                <img src="assets/img/services-3.jpg" class="card-img-top" alt="Projet 3">
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard de données</h5>
+                  <p class="card-text">Visualisation des indicateurs collectés sur le terrain.</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Tu peux en ajouter d'autres ici -->
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card shadow-sm border-0">
+                <img src="assets/img/services-5.jpg" class="card-img-top" alt="Projet 3">
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard de données</h5>
+                  <p class="card-text">Visualisation des indicateurs collectés sur le terrain.</p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section py-5">
+      <div class="container text-center" data-aos="zoom-in">
+        <h2 style="font-family: Montserrat; color: var(--heading-color);"> Envie de sauter le pas ? </h2>
+        <a href="contact.html" class="btn btn-primary mt-3" style="background-color: var(--accent-color); border: none;"><i class="bi bi-envelope"></i> Nous contacter</a>
+      </div>
+    </section>
+    
+
+  </main>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">HeroBiz</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><a href="#">Bienvenue</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Projets</a></li>
+              <li><a href="#">Activités</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nos activités</h4>
+            <ul>
+              <li><a href="#">Open Data</a></li>
+              <li><a href="#">Innovation</a></li>
+              <li><a href="#">Digitalisation</a></li>
+              <li><a href="#">Formation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Projets récents</h4>
+            <ul>
+              <li><a href="#">Sunugoal</a></li>
+              <li><a href="#">Machrabu chafi</a></li>
+              <li><a href="#">Nutritech</a></li>
+              <li><a href="#">byMadhi</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Termes & services</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Vos données personnelles</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © <strong><span>PyCodeGROUP</span></strong> 2025
+          </div>
+          <div class="credits" class="small text-muted">
+           
+            Adapté avec 💡 à partir du thème <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/" target="_blank">HeroBiz</a>
+          </p>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-github"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2.5,
+      },
+      1200: {
+        slidesPerView: 3.2,
+      },
+    }
+  });
+    </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

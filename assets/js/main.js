@@ -211,3 +211,26 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+new Swiper('.blog-swiper', {
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
+    }
+  }
+});

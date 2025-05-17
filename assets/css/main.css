@@ -12,30 +12,34 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Source Sans Pro",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Montserrat", sans-serif;
+  
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #1a1f24; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #485664; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0ea2bd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #f0eee9;        /* gris clair : Background color for the entire website, including individual sections*/
+  --default-color: #1A1A2E;           /* bleu foncé pour textes : Default color used for the majority of the text content across the entire website */
+  --heading-color: #1A1A2E;           /* idem titres : Color for headings, subheadings and title throughout the website*/
+  --accent-color: #007C91;            /* bleu pétrole, couleur principale : Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;           /*The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;      
+  --yellow-accent: #FFC300;  /* blanc pour texte sur fond coloré : Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors.*/
 }
+
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #485664;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0ea2bd; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #485664; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0ea2bd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #1A1A2E;/* The default color of the main navmenu links */
+  --nav-hover-color: #00BFA6;          /* vert d’eau pour hover : Applied to main navmenu links when they are hovered over or active*/
+  --nav-mobile-background-color: #ffffff;/* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;/* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #1A1A2E;/* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #00BFA6;/* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -45,7 +49,7 @@
 }
 
 .dark-background {
-  --background-color: #3a4753;
+  --background-color: 	#1A1A2E;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4f6171;
@@ -234,7 +238,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 70px;
   margin-right: 8px;
 }
 
@@ -256,7 +260,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 14px;
+  font-size: 20px;
   padding: 8px 26px;
   margin: 0;
   border-radius: 4px;
@@ -266,7 +270,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--yellow-accent), transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -288,6 +292,7 @@ h6 {
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -322,7 +327,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -336,7 +341,7 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
@@ -850,10 +855,10 @@ section,
   width: 100%;
   min-height: 50vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 30px 0 45px 0;
   display: flex;
   align-items: center;
-  background: url("../img/hero-bg.png") center center;
+  background: url("../img/L'Afrique des données en projets.png") center center;
   background-size: cover;
 }
 
@@ -869,7 +874,7 @@ section,
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
+  margin: 0px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
 }
@@ -889,7 +894,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--yellow-accent), transparent 15%);
 }
 
 .hero .btn-watch-video {
@@ -968,57 +973,12 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Featured Services Section
---------------------------------------------------------------*/
-.featured-services .service-item {
-  padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
-  height: 100%;
-}
-
-.featured-services .service-item .icon {
-  margin-bottom: 10px;
-}
-
-.featured-services .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 36px;
-  transition: 0.3s;
-}
-
-.featured-services .service-item h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.featured-services .service-item h4 a {
-  color: var(--heading-color);
-  transition: ease-in-out 0.3s;
-}
-
-.featured-services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.featured-services .service-item:hover {
-  transform: translateY(-10px);
-  background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-}
-
-.featured-services .service-item:hover h4 a {
-  color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .about-img {
   position: relative;
   margin: 60px 0 0 60px;
+  
 }
 
 .about .about-img:before {
@@ -1033,6 +993,7 @@ section,
 .about .about-img img {
   position: relative;
   z-index: 2;
+  border-radius: 8px
 }
 
 @media (max-width: 575px) {
@@ -1102,39 +1063,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
-.clients {
-  padding: 20px 0;
-}
-
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.clients .client-logo img {
-  padding: 20px 40px;
-  max-width: 90%;
-  transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
-}
-
-.clients .client-logo img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding: 20px;
-  }
-}
-
-/*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
@@ -1171,7 +1099,7 @@ section,
   right: 0;
   bottom: 10px;
   height: 10px;
-  background: color-mix(in srgb, var(--accent-color), transparent 30%);
+  background: color-mix(in srgb, var(--yellow-accent), transparent 30%);
   z-index: -1;
 }
 
@@ -1226,179 +1154,6 @@ section,
   z-index: 3;
   border-radius: 15px;
   z-index: 3;
-}
-
-/*--------------------------------------------------------------
-# Onfocus Section
---------------------------------------------------------------*/
-.onfocus {
-  padding: 0;
-}
-
-.onfocus .video-play {
-  min-height: 400px;
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.jpg") center center;
-  background-size: cover;
-}
-
-.onfocus .content {
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.jpg") center center;
-  background-size: cover;
-  padding: 40px;
-}
-
-@media (min-width: 768px) {
-  .onfocus .content {
-    padding: 80px;
-  }
-}
-
-.onfocus .content h3 {
-  font-weight: 600;
-  font-size: 32px;
-}
-
-.onfocus .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.onfocus .content ul li {
-  padding-bottom: 10px;
-}
-
-.onfocus .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: var(--accent-color);
-}
-
-.onfocus .content p:last-child {
-  margin-bottom: 0;
-}
-
-.onfocus .content .read-more {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 12px 24px;
-  border-radius: 5px;
-  transition: 0.3s;
-  display: -nline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
-.onfocus .content .read-more i {
-  font-size: 18px;
-  margin-left: 5px;
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.onfocus .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
-  padding-right: 19px;
-}
-
-.onfocus .content .read-more:hover i {
-  margin-left: 10px;
-}
-
-.onfocus .pulsating-play-btn {
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-}
-
-/*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
-}
-
-.features .nav-link {
-  background-color: var(--surface-color);
-  color: var(--color-secondary);
-  border: 0;
-  padding: 25px 20px;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: 0s;
-  cursor: pointer;
-  height: 100%;
-}
-
-.features .nav-link i {
-  font-size: 32px;
-  line-height: 0;
-}
-
-.features .nav-link h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 10px 0 0 0;
-}
-
-.features .nav-link:hover {
-  color: var(--accent-color);
-}
-
-.features .nav-link:hover,
-.features .nav-link.active {
-  transition: 0.3s;
-  background: var(--accent-color);
-  color: var(--contrast-color) !important;
-  border-color: var(--accent-color);
-}
-
-.features .nav-link:hover h4,
-.features .nav-link.active h4 {
-  color: var(--contrast-color);
-}
-
-.features .nav-link:hover i,
-.features .nav-link.active i {
-  color: var(--contrast-color) !important;
-}
-
-.features .tab-content {
-  margin-top: 30px;
-}
-
-.features .tab-pane.active {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.features .tab-pane h3 {
-  font-weight: 600;
-  font-size: 28px;
-}
-
-.features .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features .tab-pane ul li {
-  padding-bottom: 10px;
-}
-
-.features .tab-pane ul i {
-  font-size: 24px;
-  margin-right: 4px;
-  color: var(--accent-color);
-}
-
-.features .tab-pane p:last-child {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1474,339 +1229,6 @@ section,
   transform: scale(1.2);
 }
 
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  position: relative;
-}
-
-.testimonials:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.testimonials .testimonials-bg {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.testimonials .container {
-  position: relative;
-  z-index: 3;
-}
-
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  text-align: center;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  margin: 0 0 15px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
-  opacity: 0.5;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
-  opacity: 1;
-}
-
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-item {
-  background-color: var(--backgroun-color);
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.pricing .pricing-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/pricing-bg.jpg") center center;
-  background-size: cover;
-  text-align: center;
-  padding: 40px;
-  margin: -60px -40px 0;
-}
-
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 5px;
-  font-size: 36px;
-  color: var(--contrast-color);
-}
-
-.pricing h4 {
-  font-size: 48px;
-  color: var(--contrast-color);
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
-  font-size: 24px;
-}
-
-.pricing ul {
-  padding: 30px 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.pricing ul i {
-  color: var(--accent-color);
-  font-size: 36px;
-  padding-right: 3px;
-  line-height: 0;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-size: 24px;
-  padding-left: 4px;
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 6px;
-  color: var(--default-color);
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  transition: 0.3s;
-  border: 1px solid var(--default-color);
-}
-
-.pricing .buy-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.pricing .featured {
-  border-color: var(--accent-color);
-}
-
-.pricing .featured .pricing-header {
-  background: linear-gradient(color-mix(in srgb, var(--accent-color), transparent 10%), color-mix(in srgb, var(--accent-color), transparent 20%)), url("../img/pricing-bg.jpg") center center;
-}
-
-.pricing .featured .buy-btn {
-  border-color: var(--accent-color);
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-/*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
-.faq .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.faq .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.faq .faq-container {
-  margin-top: 15px;
-}
-
-.faq .faq-container .faq-item {
-  background-color: var(--surface-color);
-  position: relative;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.faq .faq-container .faq-item:last-child {
-  margin-bottom: 0;
-}
-
-.faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 24px;
-  margin: 0 30px 0 32px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.faq .faq-container .faq-item h3 span {
-  color: var(--accent-color);
-  padding-right: 5px;
-}
-
-.faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-.faq .faq-container .faq-item .faq-icon {
-  position: absolute;
-  top: 22px;
-  left: 20px;
-  font-size: 22px;
-  line-height: 0;
-  transition: 0.3s;
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-item .faq-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 16px;
-  line-height: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
-}
-
-.faq .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
-  opacity: 1;
-  padding-top: 10px;
-}
-
-.faq .faq-container .faq-active .faq-toggle {
-  transform: rotate(90deg);
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1873,7 +1295,7 @@ section,
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFC300;
   display: inline-block;
   background-color: var(--accent-color);
 }
@@ -1918,89 +1340,6 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
-}
-
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-.team .team-member .member-img {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  top: -18px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  margin: 0 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.team .team-member .social a i {
-  line-height: 0;
-  font-size: 16px;
-}
-
-.team .team-member .social a:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .team-member .member-info {
-  background-color: var(--surface-color);
-  padding: 30px 15px;
-  text-align: center;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  background: var(--surface-color);
-  margin: -50px 20px 0 20px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.team .team-member .member-info h4 {
-  font-weight: 500;
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-
-.team .team-member .member-info span {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.team .team-member:hover .social {
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -2068,6 +1407,7 @@ section,
   padding: 40px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .contact .info h3 {
@@ -2119,7 +1459,7 @@ section,
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  border-radius: 0px;
+  border-radius: 8px;
   box-shadow: none;
   font-size: 14px;
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
@@ -2162,6 +1502,11 @@ section,
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
+
+.portfolio .portfolio-content img {
+  border-radius: 15px;
+}
+
 
 .portfolio-details .swiper-wrapper {
   height: auto;
@@ -3008,4 +2353,79 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+.blog .swiper-slide article {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.blog .swiper-slide article:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# blog caroussel Section
+--------------------------------------------------------------*/
+.blog article {
+  background: var(--surface-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.blog .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 10px;
+}
+
+.blog .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.blog .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.blog .title a:hover {
+  color: var(--accent-color);
+}
+
+.blog .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.blog .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blog .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 0;
+}
+
+.blog-swiper .swiper-pagination {
+  margin-top: 30px;  /* Espace au-dessus des points */
+  position: relative; /* Important : rend le margin effectif */
 }

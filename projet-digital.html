@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet - Plateforme municipale | PyCodeGroup</title>
+  <meta name="description" content="Page projet interactive - PyCodeGroup">
+  <meta name="keywords" content="projet, digitalisation, Afrique, PyCodeGroup">
+
+  <!-- Google Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F5F7FA;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .nav-tabs .nav-link {
+      color: #007C91;
+      font-weight: 600;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #FFC300;
+      color: #1A1A2E;
+      border: none;
+    }
+    .tab-content p {
+      color: #1A1A2E;
+      min-height: 300px
+    }
+    .btn-pycode {
+      background-color: #007C91;
+      color: white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+    .btn-pycode:hover {
+      background-color: #00BFA6;
+      color: white;
+    }
+    .cta-section {
+      background-color: #1A1A2E;
+      color: #F0EEE9;
+      padding: 60px 0;
+    }
+    .cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #FFC300;
+    }
+    .cta-section p {
+      font-family: 'Poppins', sans-serif;
+    }
+    .rounded-img {
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+    }
+    .rounded-img:hover {
+      transform: scale(1.02);
+    }
+
+    .image-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-hover-container img {
+  transition: 0.3s ease-in-out;
+  border-radius: 16px;
+}
+
+.image-hover-container .hover-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007C91;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-hover-container:hover .hover-button {
+  opacity: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">PyCodeGroup</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#projets" class="active">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Banner Section ======= -->
+  <section class="page-title py-5 text-center" style="background-color: #F0EEE9;">
+    <div class="container" data-aos="fade-down">
+      <h1 class="display-5 fw-bold" style="font-family: Montserrat; color: #1A1A2E;">Plateforme municipale</h1>
+      <p class="lead" style="font-family: Poppins; color: #007C91;">Une initiative de digitalisation au service des citoyens</p>
+    </div>
+  </section>
+
+  <!-- ======= Main Content ======= -->
+  <main class="container py-5">
+    <div class="row align-items-start" data-aos="fade-up">
+      <div class="col-lg-6">
+        <ul class="nav nav-tabs mb-4 justify-content-start" id="projectTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="objectifs-tab" data-bs-toggle="tab" data-bs-target="#objectifs" type="button" role="tab">Objectifs</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="impact-tab" data-bs-toggle="tab" data-bs-target="#impact" type="button" role="tab">Impact</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="beneficiaires-tab" data-bs-toggle="tab" data-bs-target="#beneficiaires" type="button" role="tab">Bénéficiaires</button>
+          </li>
+        </ul>
+
+        <div class="tab-content bg-white rounded shadow p-4" id="projectTabsContent">
+          <div class="tab-pane fade show active" id="objectifs" role="tabpanel">
+            <h3>Objectifs</h3>
+            <p>Ce projet vise à numériser les services municipaux, faciliter les démarches administratives, et optimiser la gestion locale grâce à des outils digitaux accessibles.</p>
+          </div>
+          <div class="tab-pane fade" id="impact" role="tabpanel">
+            <h3>Impact</h3>
+            <p>Le projet renforce la transparence, réduit les files d'attente, améliore l'accessibilité des données, et contribue à la modernisation des collectivités locales.</p>
+          </div>
+          <div class="tab-pane fade" id="beneficiaires" role="tabpanel">
+            <h3>Bénéficiaires</h3>
+            <p>Citoyens, agents municipaux, responsables politiques locaux, jeunes entrepreneurs et startups tech locales impliquées dans le déploiement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <div class="image-hover-container">
+          <a href="https://plateforme-municipale.example.com" target="_blank">
+            <img src="assets/img/portfolio/books-3.jpg" alt="Illustration du projet" class="img-fluid shadow">
+            <span class="hover-button">En savoir plus</span>
+          </a>
+        </div>
+       
+      </div>
+      
+
+    <div class="text-center mt-5" data-aos="zoom-in">
+      <a href="contact.html" class="btn btn-pycode">Contribuer ou en savoir plus</a>
+    </div>
+  </main>
+
+  <!-- ======= CTA Section ======= -->
+  <section class="cta-section text-center">
+    <div class="container">
+      <h2>Envie d'agir pour la transformation digitale ?</h2>
+      <p class="mt-3">Rejoignez-nous pour créer un impact positif et durable en Afrique.</p>
+      <a href="contact.html" class="btn btn-pycode mt-4">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- ======= Scripts ======= -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
