@@ -34,7 +34,7 @@
     }
     .tab-content p {
       color: #1A1A2E;
-      min-height: 300px
+      min-height: 238px
     }
     .btn-pycode {
       background-color: #007C91;
@@ -48,9 +48,9 @@
       color: white;
     }
     .cta-section {
-      background-color: #1A1A2E;
+      background-color: #f0eee9;
       color: #F0EEE9;
-      padding: 60px 0;
+      padding: 30px 0;
     }
     .cta-section h2 {
       font-family: 'Montserrat', sans-serif;
@@ -104,29 +104,46 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">PyCodeGroup</h1>
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo-header.png" alt="">
+        
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html#projets" class="active">Projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#hero" class="active">Bienvenue<br></a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Activités</a></li>
+          <li><a href="#portfolio">Projets</a></li>
+          
+          <li><a href="#">Actu</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <a class="btn-getstarted" href="index.html#call-to-action">Contribuer</a>
+
     </div>
   </header>
 
-  <!-- ======= Banner Section ======= -->
-  <section class="page-title py-5 text-center" style="background-color: #F0EEE9;">
-    <div class="container" data-aos="fade-down">
-      <h1 class="display-5 fw-bold" style="font-family: Montserrat; color: #1A1A2E;">Plateforme municipale</h1>
-      <p class="lead" style="font-family: Poppins; color: #007C91;">Une initiative de digitalisation au service des citoyens</p>
-    </div>
-  </section>
 
+  <!-- Page Title -->
+    <div class="page-title">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
   <!-- ======= Main Content ======= -->
   <main class="container py-5">
     <div class="row align-items-start" data-aos="fade-up">
@@ -171,19 +188,98 @@
       
 
     <div class="text-center mt-5" data-aos="zoom-in">
-      <a href="contact.html" class="btn btn-pycode">Contribuer ou en savoir plus</a>
+      <a href="contact.html" class="btn btn-pycode">Nous contacter</a>
     </div>
   </main>
 
   <!-- ======= CTA Section ======= -->
-  <section class="cta-section text-center">
-    <div class="container">
-      <h2>Envie d'agir pour la transformation digitale ?</h2>
-      <p class="mt-3">Rejoignez-nous pour créer un impact positif et durable en Afrique.</p>
-      <a href="contact.html" class="btn btn-pycode mt-4">Nous contacter</a>
-    </div>
-  </section>
+  
+ <footer id="footer" class="footer dark-background">
 
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">HeroBiz</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><a href="#">Bienvenue</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Projets</a></li>
+              <li><a href="#">Activités</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nos activités</h4>
+            <ul>
+              <li><a href="#">Open Data</a></li>
+              <li><a href="#">Innovation</a></li>
+              <li><a href="#">Digitalisation</a></li>
+              <li><a href="#">Formation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Projets récents</h4>
+            <ul>
+              <li><a href="#">Sunugoal</a></li>
+              <li><a href="#">Machrabu chafi</a></li>
+              <li><a href="#">Nutritech</a></li>
+              <li><a href="#">byMadhi</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Termes & services</h4>
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Vos données personnelles</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © <strong><span>PyCodeGROUP</span></strong> 2025
+          </div>
+          <div class="credits" class="small text-muted">
+           
+            Adapté avec 💡 à partir du thème <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/" target="_blank">HeroBiz</a>
+          </p>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-github"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
   <!-- ======= Scripts ======= -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
