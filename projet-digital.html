@@ -15,152 +15,20 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #F5F7FA;
-    }
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-    }
-    .nav-tabs .nav-link {
-      color: #007C91;
-      font-weight: 600;
-    }
-    .nav-tabs .nav-link.active {
-      background-color: #FFC300;
-      color: #1A1A2E;
-      border: none;
-    }
-    .tab-content p {
-      color: #1A1A2E;
-      min-height: 238px
-    }
-    .btn-pycode {
-      background-color: #007C91;
-      color: white;
-      border-radius: 8px;
-      padding: 10px 20px;
-      transition: 0.3s;
-    }
-    .btn-pycode:hover {
-      background-color: #00BFA6;
-      color: white;
-    }
-    .cta-section {
-      background-color: #f0eee9;
-      color: #F0EEE9;
-      padding: 30px 0;
-    }
-    .cta-section h2 {
-      font-family: 'Montserrat', sans-serif;
-      color: #FFC300;
-    }
-    .cta-section p {
-      font-family: 'Poppins', sans-serif;
-    }
-    .rounded-img {
-      border-radius: 16px;
-      transition: transform 0.3s ease;
-    }
-    .rounded-img:hover {
-      transform: scale(1.02);
-    }
 
-    .image-hover-container {
-  position: relative;
-  display: inline-block;
-}
-
-.image-hover-container img {
-  transition: 0.3s ease-in-out;
-  border-radius: 16px;
-}
-
-.image-hover-container .hover-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #007C91;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  font-family: 'Poppins', sans-serif;
-}
-
-.image-hover-container:hover .hover-button {
-  opacity: 1;
-}
-
-.page-title-blur {
-  background-image: url('assets/img/portfolio/books-3.jpg'); /* Mets ici ton image */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  padding: 80px 0 40px 0; /* plus serré en bas */
-  border-radius: 16px;
-   margin-bottom: 40px; /* ou 50px ou + selon l’effet désiré */
-}
-
-.page-title-blur::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(240, 238, 233, 0.85); /* effet flouté doux */
-  backdrop-filter: blur(6px);
-  z-index: 0;
-}
-
-.card-blur {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
-  z-index: 1;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.underline-accent {
-  width: 60px;
-  height: 4px;
-  background-color: #FFC300;
-  border-radius: 2px;
-}
-
-.swiper-container {
-  padding-bottom: 30px;
-}
-.swiper-slide .card-title {
-  font-family: 'Montserrat', sans-serif;
-  color: #007C91;
-}
-.swiper-slide .card-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
-  color: #1A1A2E;
-}
-
-
-
-
-  </style>
 </head>
-
+<body class="page-projet" >
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
        <!---- <img src="assets/img/logo-header.png" alt=""> -->
-        <h1 style="margin:0;">
-    <span style="color:#007C91; font-family:'Montserrat', sans-serif;">PyCode</span>
-    <span style="color:#1A1A2E; font-family:'Poppins', sans-serif;">Group</span>
-  </h1>
+    <h1 class="logo-title">
+  <span class="logo-pycode">PyCode</span>
+  <span class="logo-group">Group</span>
+</h1>
+
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -193,13 +61,13 @@
   <!-- ======= Main Content ======= -->
   <main class="container py-5">
    
-<section class="page-title-blur position-relative">
+<section  class="page-title-blur position-relative">
   <div class="container card-blur py-4 px-4 text-center shadow">
-    <h1 class="fw-bold mb-3" style="font-family:'Montserrat', sans-serif; color:#007C91; font-size:2.3rem;">
-      Plateforme municipale
-    </h1>
+    <h1 class="project-title fw-bold mb-3">
+  Plateforme municipale
+</h1>
     <div class="underline-accent mx-auto mb-3"></div>
-    <p style="font-family:'Poppins', sans-serif; color:#1A1A2E; font-size:1.1rem;">
+    <p id="project-subtract">
       Un projet digital pour simplifier, moderniser et rapprocher l'administration de ses citoyens.
     </p>
   </div>
@@ -208,7 +76,7 @@
 
 
 
-    <div class="row align-items-start" data-aos="fade-up">
+    <div  class="row align-items-start" data-aos="fade-up">
       <div class="col-lg-6">
         <ul class="nav nav-tabs mb-4 justify-content-start" id="projectTabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -256,11 +124,11 @@
 
 
   <!-- ======= Autres projets ======= -->
-   <section class="section py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 style="font-family: Montserrat; color: #007C91;">Découvrez nos autres projets</h2>
-      <p style="font-family: Poppins; color: #1A1A2E;">Un écosystème d’innovation, de data et d’impact</p>
+   <section  class="section py-5 bg-light">
+  <div class="container" >
+    <div class="text-center mb-4 ">
+      <h2 class="project-title">Découvrez nos autres projets</h2>
+      <p id="project-subtract">Un écosystème d’innovation, de data et d’impact</p>
     </div>
 
     <!-- Swiper -->
