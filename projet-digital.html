@@ -14,7 +14,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -132,6 +132,18 @@
   border-radius: 2px;
 }
 
+.swiper-container {
+  padding-bottom: 30px;
+}
+.swiper-slide .card-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+}
+.swiper-slide .card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #1A1A2E;
+}
 
 
 
@@ -153,7 +165,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Bienvenue<br></a></li>
+          <li><a href="index.html#hero" >Bienvenue<br></a></li>
           <li><a href="index.html#about">A propos</a></li>
            <li class="dropdown"><a href="index.html#services"><span>Activités</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
            <ul>
@@ -162,7 +174,7 @@
               <li><a href="service-digitalisation.html">Digitalisation</a></li>
               <li><a href="service-digitalisation.html">Formation</a></li>
             </ul>
-          <li><a href="index.html#portfolio">Projets</a></li>
+          <li><a href="index.html#portfolio" class="active">Projets</a></li>
           
           <li><a href="index.html#blog-carousel">Actu</a></li>
           
@@ -238,11 +250,88 @@
       
 
     <div class="text-center mt-5" data-aos="zoom-in">
-      <a href="contact.html" class="btn btn-pycode">Nous contacter</a>
+      <a href="index.html#contact" class="btn btn-pycode">Nous contacter</a>
     </div>
   </main>
 
-  <!-- ======= CTA Section ======= -->
+
+  <!-- ======= Autres projets ======= -->
+   <section class="section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 style="font-family: Montserrat; color: #007C91;">Découvrez nos autres projets</h2>
+      <p style="font-family: Poppins; color: #1A1A2E;">Un écosystème d’innovation, de data et d’impact</p>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm border-0">
+            <img src="assets/img/portfolio/books-2.jpg" class="card-img-top" alt="SunuGoal">
+            <div class="card-body">
+              <h5 class="card-title">SunuGoal</h5>
+              <p class="card-text">Valoriser les talents du foot local avec les données.</p>
+              <a href="projet-sunugoal.html" class="stretched-link text-decoration-none"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm border-0">
+            <img src="assets/img/portfolio/books-1.jpg" class="card-img-top" alt="Mashrabu Chafi">
+            <div class="card-body">
+              <h5 class="card-title">Mashrabu Chafi</h5>
+              <p class="card-text">Dashboard spirituel pour les déclamations à Touba.</p>
+              <a href="projet-mashrabu.html" class="stretched-link text-decoration-none"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm border-0">
+            <img src="assets/img/portfolio/books-3.jpg" class="card-img-top" alt="NutriTech">
+            <div class="card-body">
+              <h5 class="card-title">NutriTech</h5>
+              <p class="card-text">Comparer les aliments locaux pour mieux manger.</p>
+              <a href="projet-nutritech.html" class="stretched-link text-decoration-none"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm border-0">
+            <img src="assets/img/portfolio/branding-2.jpg" class="card-img-top" alt="NutriTech">
+            <div class="card-body">
+              <h5 class="card-title">beneen projet</h5>
+              <p class="card-text">louy projet bi</p>
+              <a href="projet-nutritech.html" class="stretched-link text-decoration-none"></a>
+            </div>
+          </div>
+        </div>
+
+         <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="card shadow-sm border-0">
+            <img src="assets/img/portfolio/branding-1.jpg" class="card-img-top" alt="NutriTech">
+            <div class="card-body">
+              <h5 class="card-title">byMadhi</h5>
+              <p class="card-text">description projet</p>
+              <a href="projet-nutritech.html" class="stretched-link text-decoration-none"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
   
  <footer id="footer" class="footer dark-background">
 
@@ -346,11 +435,30 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
     AOS.init();
   </script>
+
+  <script>
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2.5,
+      },
+      1200: {
+        slidesPerView: 3.2,
+      },
+    }
+  });
+</script>
+
 </body>
 
 </html>

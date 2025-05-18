@@ -1496,6 +1496,19 @@ section,
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
 
+@media (min-width: 992px) {
+  #contact .row {
+    align-items: stretch;
+  }
+
+  #contact .info, #contact form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/

@@ -520,83 +520,92 @@
     
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Une question, une collaboration ou un projet à partager ? Contactez-nous.</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-
-      <div class="container" data-aos="fade">
-
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4">
-
-            <div class="info">
-              <h3>Contact</h3>
-              <p>Une question, une collaboration ou simplement discuter ? Contactez-nous.</p>
-
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Adresse :</h4>
-                  <p>Dakar, Sénégal (et en ligne 🌍)</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>contact@pycodegroup.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-whatsapp"></i>
-                <div>
-                  <h4>Téléphone :</h4>
-                  <p>+221 75 631 75 91</p>
-                </div>
-              </div><!-- End Info Item -->
-
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-5 gx-lg-5">
+      <div class="col-lg-4">
+        <div class="info">
+          <h3>Contact</h3>
+          <p>Une question, une collaboration ou simplement discuter ? Contactez-nous.</p>
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h4>Adresse :</h4>
+              <p>Dakar, Sénégal (et en ligne 🌍)</p>
             </div>
-
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Envoyer</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h4>Email:</h4>
+              <p>contact@pycodegroup.com</p>
+            </div>
+          </div>
+          <div class="info-item d-flex">
+            <i class="bi bi-whatsapp"></i>
+            <div>
+              <h4>Téléphone :</h4>
+              <p>+221 75 631 75 91</p>
+            </div>
+          </div>
+          <div class="info-item d-flex">
+      <i class="bi bi-clock"></i>
+      <div>
+    <h4>Disponibilité :</h4>
+    <p>Lun – Ven : 9h – 18h</p>
+  </div>
+</div>
         </div>
-
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="col-lg-8">
+        <form action="#" method="post" class="bg-white p-4 shadow rounded" style="max-width: 100%;">
+          <div class="mb-3">
+            <label for="name" class="form-label">Votre nom</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Votre email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Je souhaite...</label>
+            <select class="form-select" id="subject" required>
+              <option value="">-- Choisir une option --</option>
+              <option>Poser une question</option>
+              <option>Soumettre un projet</option>
+              <option>Demander un partenariat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label" for="terms">J'accepte la politique de confidentialité.</label>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </div>
+        </form>
+
+        <div class="text-center mt-4">
+          <p class="small text-muted">👉 Vous souhaitez contribuer à un projet ou partager des données ? <a href="contribuer.html">Découvrez la page dédiée</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Contact Section -->
+<!-- /Contact Section -->
 
   </main>
 
@@ -654,10 +663,10 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Termes & services</h4>
             <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">Vos données personnelles</a></li>
+              <li><a href="mentions_legales.html">Mentions légales</a></li>
+              <li><a href="conditions.html">Conditions générales</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="donnees.html">Vos données personnelles</a></li>
             </ul>
           </div>
 
