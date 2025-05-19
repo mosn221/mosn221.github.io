@@ -9,51 +9,9 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; background-color: #F5F7FA; }
-    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-    .btn-pycode {
-      background-color: #007C91;
-      color: white;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-family: 'Poppins', sans-serif;
-      transition: 0.3s;
-    }
-    .btn-pycode:hover {
-      background-color: #00BFA6;
-      color: white;
-    }
-    .form-control, .form-select {
-      border-radius: 10px;
-      border: 1px solid #ced4da;
-      padding: 10px 15px;
-    }
-    .form-check-label { font-size: 0.95rem; }
-    .hero-section {
-      background-image: url('assets/img/afrique-digital.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 45vh;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
-    .hero-section .container {
-      position: relative;
-      z-index: 2;
-    }
-  </style>
+    <!-- Favicons -->
+  <link href="assets/img/Logo-Favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
 <body>
   <header id="header" class="header d-flex align-items-center sticky-top">
@@ -140,29 +98,34 @@
           <h3>Soumettre un partenariat ou des données</h3>
           <form>
             <div class="mb-3">
-              <label class="form-label">Type de partenariat</label>
-              <select class="form-select">
-                <option>Fourniture de données</option>
-                <option>Projet collaboratif</option>
-                <option>Soutien institutionnel / financier</option>
-                <option>Autre</option>
-              </select>
+            <label class="form-label">Type de partenariat</label>
+            <select class="form-select" id="typePartenariat">
+              <option>Projet collaboratif</option>
+              <option>Soutien institutionnel / financier</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="mb-3 d-none" id="note-financier">
+            <div class="alert alert-info">
+              🙏 Merci pour votre intention de soutien. Nous prendrons contact avec vous personnellement pour organiser cela en toute simplicité et confiance.
             </div>
+          </div>
+
             <div class="mb-3">
               <label class="form-label">Nom / Structure</label>
               <input type="text" class="form-control">
             </div>
             <div class="mb-3">
-              <label class="form-label">Description du partenariat ou des données</label>
+              <label class="form-label">Description</label>
               <textarea class="form-control" rows="4"></textarea>
             </div>
             <div class="mb-3">
-              <label class="form-label">Téléverser un fichier (optionnel)</label>
+              <label class="form-label" id="bloc-fichier">Téléverser un fichier (optionnel)</label>
               <input type="file" class="form-control">
             </div>
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" id="accept2" required>
-              <label class="form-check-label" for="accept2">J'atteste avoir le droit de partager ces données et j'accepte la politique de confidentialité.</label>
+              <label class="form-check-label" for="accept2">J'accepte les conditions générales et la politique de confidentialité.</label>
             </div>
             <button type="submit" class="btn btn-pycode">Envoyer la proposition</button>
           </form>
@@ -171,60 +134,63 @@
     </div>
   </main>
 
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">HeroBiz</span>
-            </a>
+           <a href="index.html" class="logo d-flex align-items-center">
+            <div class="sitename-footer">
+              <span class="logo-pycode">PyCode</span>
+              <span class="logo-group">Group</span>
+            </div>
+</a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>Hann, Dakar</p>
+              <p>Sénégal</p>
+              <p class="mt-3">Téléphone : <span>+221 75 631 05 91</span></p>
+              <p>Email : <span>pycodegroup@gmail.com</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Liens utiles</h4>
             <ul>
-              <li><a href="#">Bienvenue</a></li>
-              <li><a href="#">A propos</a></li>
-              <li><a href="#">Projets</a></li>
-              <li><a href="#">Activités</a></li>
+              <li><a href="index.html#hero">Bienvenue</a></li>
+              <li><a href="index.html#about">A propos</a></li>
+              <li><a href="index.html#portfolio">Projets</a></li>
+              <li><a href="index.html#services">Activités</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nos activités</h4>
             <ul>
-              <li><a href="#">Open Data</a></li>
-              <li><a href="#">Innovation</a></li>
-              <li><a href="#">Digitalisation</a></li>
-              <li><a href="#">Formation</a></li>
+              <li><a href="service-digitalisation.html">Open Data</a></li>
+              <li><a href="service-digitalisation.html">Innovation</a></li>
+              <li><a href="service-digitalisation.html">Digitalisation</a></li>
+              <li><a href="service-digitalisation.html">Formation</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Projets récents</h4>
             <ul>
-              <li><a href="#">Sunugoal</a></li>
-              <li><a href="#">Machrabu chafi</a></li>
-              <li><a href="#">Nutritech</a></li>
-              <li><a href="#">byMadhi</a></li>
+              <li><a href="projet-digital.html">Sunugoal</a></li>
+              <li><a href="projet-digital.html">Machrabu chafi</a></li>
+              <li><a href="projet-digital.html">Nutritech</a></li>
+              <li><a href="projet-digital.html">byMadhi</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Termes & services</h4>
             <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">Vos données personnelles</a></li>
+              <li><a href="mentions_legales.html">Mentions légales</a></li>
+              <li><a href="conditions.html">Conditions générales</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="donnees.html">Vos données personnelles</a></li>
             </ul>
           </div>
 
@@ -237,26 +203,27 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © <strong><span>PyCodeGROUP</span></strong> 2025
+            © <strong><span>PyCode Group</span></strong> 2025
           </div>
           <div class="credits" class="small text-muted">
            
-            Adapté avec 💡 à partir du thème <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/" target="_blank">HeroBiz</a>
+            Adapté avec 💡 à partir de <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/" target="_blank">HeroBiz</a>
           </p>
           </div>
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-github"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="https://x.com/pycodegroup"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://github.com/pycodegroup"><i class="bi bi-github"></i></a>
+          <a href="https://instagram.com/pycodegroup"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com/company/pycodegroup"><i class="bi bi-linkedin"></i></a>
         </div>
 
       </div>
     </div>
 
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

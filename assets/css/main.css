@@ -567,7 +567,7 @@ h6 {
 
 .sitename-footer .logo-pycode {
   font-family: 'Montserrat', sans-serif;
-  color: var(--heading-color); /* ou une couleur spécifique si tu veux */
+  color: var(--contrast-color); /* ou une couleur spécifique si tu veux */
   font-weight: 600;
 }
 
@@ -1686,6 +1686,26 @@ section,
   color: var(--accent-color);
 }
 
+.section-boxed {
+  padding: 80px;
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  border-radius: 15px;
+}
+
+.project-link {
+  color: var(--heading-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.btn-pycode {
+      background-color: #007C91;
+      color: white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
 
 
 
@@ -1763,4 +1783,116 @@ section,
 .blog-swiper .swiper-pagination {
   margin-top: 30px;  /* Espace au-dessus des points */
   position: relative; /* Important : rend le margin effectif */
+}
+/*--------------------------------------------------------------
+# hero Section service-detail
+--------------------------------------------------------------*/
+
+.hero-section {
+  background-image: url('/img/portfolio/books-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+ .hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.section-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--heading-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+ .section-paragraph {
+  font-family: 'Poppins', sans-serif;
+  color: var(--default-color);
+  font-size: 1rem;
+}
+
+/*--------------------------------------------------------------
+# page legal
+--------------------------------------------------------------*/
+.page-legal {
+  background-color: #F5F7FA;
+  color: #1A1A2E;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.legal-wrapper {
+  max-width: 960px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 124, 145, 0.08);
+}
+
+.page-legal h1 {
+  font-size: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+}
+
+.page-legal h2 {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+  margin-top: 1.5rem;
+}
+
+.page-legal p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background-color: #F0EEE9;
+  border-left: 4px solid #FFC300;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  color: #007C91;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }

@@ -234,3 +234,37 @@ new Swiper('.blog-swiper', {
     }
   }
 });
+
+// === PyCodeGroup custom Swiper initialization ===
+window.addEventListener('load', () => {
+  if (document.querySelector('.swiper-container')) {
+    new Swiper('.swiper-container', {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      grabCursor: true,
+      freeMode: true,
+      breakpoints: {
+        768: { slidesPerView: 2.5 },
+        1200: { slidesPerView: 3.2 },
+      }
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.getElementById("typePartenariat");
+  const note = document.getElementById("note-financier");
+  const fichier = document.getElementById("bloc-fichier");
+
+  if (select) {
+    select.addEventListener("change", function () {
+      if (this.value.includes("Soutien")) {
+        note.classList.remove("d-none");
+        fichier.classList.add("d-none");
+      } else {
+        note.classList.add("d-none");
+        fichier.classList.remove("d-none");
+      }
+    });
+  }
+});
