@@ -1897,34 +1897,46 @@ section,
   text-decoration: underline;
 }
 
-.article-hero {
+.article-hero-modern {
   background-size: cover;
   background-position: center;
-  padding: 80px 20px;
   position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
 }
 
-.article-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(26, 26, 46, 0.6);
+.article-hero-modern .overlay {
+  background-color: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.article-hero .container {
-  position: relative;
-  z-index: 1;
+.category-badge {
+  background-color: #FFC300;
+  color: #1A1A2E;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.article-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-.article-meta {
-  color: #FFC300;
+.article-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  color: var(--default-color);
+}
+
+.quote-box {
+  padding: 1rem 1.5rem;
+  background: #f0eee9;
+  border-left: 4px solid #FFC300;
+  font-style: italic;
+  border-radius: 6px;
 }
