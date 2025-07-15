@@ -1603,7 +1603,7 @@ section,
 .page-projet .card-blur {
   position: relative;
   background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
+  border-radius: 0px;
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
@@ -1618,6 +1618,23 @@ section,
   font-family:'Poppins', sans-serif;
    color:#1A1A2E;
     font-size:1.1rem;
+}
+
+.page-projet .bg-rounded-shadow {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2rem;
+}
+
+.page-projet .rounded-bottom-only {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 /*--------------------------------------------------------------
