@@ -254,7 +254,11 @@ section,
 # Service Details Section
 --------------------------------------------------------------*/
 
-
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+  font-size: 2.3rem;
+}
 
 
 
