@@ -1603,11 +1603,12 @@ section,
 .page-projet .card-blur {
   position: relative;
   background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 0px;
+  border-radius: 0; /* 👈 supprime les coins arrondis */
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
 }
+
 .project-title {
   font-family: 'Montserrat', sans-serif;
   color: #007C91;
