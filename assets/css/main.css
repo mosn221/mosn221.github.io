@@ -249,41 +249,14 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
-.section-title {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
 
-.section-boxed {
-  padding: 80px;
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
-  border-radius: 15px;
-}
 
-.project-link {
-  color: var(--heading-color);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 1.05rem;
-}
+
+
 
 .btn-pycode {
       background-color: #007C91;
