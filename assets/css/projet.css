@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
 .page-projet .swiper-slide .card-text {
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
@@ -155,40 +158,4 @@
   border-top-right-radius: 0;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-}
-
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
-.page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 25px 0;
-  position: relative;
-}
-
-.page-title h1 {
-  font-size: 28px;
-  font-weight: 300;
-}
-
-.page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.page-title .breadcrumbs ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
