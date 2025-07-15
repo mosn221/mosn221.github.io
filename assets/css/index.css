@@ -491,6 +491,9 @@
   transform: scale(1.1);
 }
 
+.portfolio .portfolio-content img {
+  border-radius: 15px;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -554,3 +557,6 @@
     justify-content: space-between;
   }
 }
+
+
+
