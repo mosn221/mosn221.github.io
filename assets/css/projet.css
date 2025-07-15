@@ -1,0 +1,194 @@
+.page-projet .swiper-slide .card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #1A1A2E;
+}
+
+.page-projet .underline-accent {
+  width: 60px;
+  height: 4px;
+  background-color: #FFC300;
+  border-radius: 2px;
+}
+
+.page-projet .swiper-container {
+  padding-bottom: 30px;
+}
+.page-projet .swiper-slide .card-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+}
+
+ .page-projet .nav-tabs .nav-link {
+      color: #007C91;
+      font-weight: 600;
+    }
+    .page-projet .nav-tabs .nav-link.active {
+      background-color: #FFC300;
+      color: #1A1A2E;
+      border: none;
+    }
+    .page-projet body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F5F7FA;
+    }
+    
+    
+   
+   .page-projet .tab-content p {
+      color: #1A1A2E;
+      min-height: 238px
+    }
+    .page-projet .btn-pycode {
+      background-color: #007C91;
+      color: white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+   .page-projet .btn-pycode:hover {
+      background-color: #00BFA6;
+      color: white;
+    }
+   .page-projet .cta-section {
+      background-color: #f0eee9;
+      color: #F0EEE9;
+      padding: 30px 0;
+    }
+    .page-projet.cta-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #FFC300;
+    }
+   .page-projet .cta-section p {
+      font-family: 'Poppins', sans-serif;
+    }
+   .page-projet .rounded-img {
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+    }
+    .page-projet.rounded-img:hover {
+      transform: scale(1.02);
+    }
+
+   .page-projet .image-hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.page-projet .image-hover-container img {
+  transition: 0.3s ease-in-out;
+  
+}
+
+.page-projet .image-hover-container .hover-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007C91;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-projet .image-hover-container:hover .hover-button {
+  opacity: 1;
+}
+
+.page-projet .page-title-blur {
+  background-image: url('../img/portfolio/books-3.jpg'); /* Mets ici ton image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 0 40px 0; /* plus serré en bas */
+  border-radius: 16px;
+   margin-bottom: 40px; /* ou 50px ou + selon l’effet désiré */
+}
+
+.page-projet .page-title-blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(240, 238, 233, 0.85); /* effet flouté doux */
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+.page-projet .card-blur {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 0; /* 👈 supprime les coins arrondis */
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+  font-size: 2.3rem;
+}
+
+.project-subtract {
+  font-family:'Poppins', sans-serif;
+   color:#1A1A2E;
+    font-size:1.1rem;
+}
+
+.page-projet .bg-rounded-shadow {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2rem;
+}
+
+.page-projet .rounded-bottom-only {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
