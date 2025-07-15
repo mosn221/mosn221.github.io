@@ -59,17 +59,31 @@
 
 
   <!-- ======= Main Content ======= -->
-  <main>
+ <main>
 
-  <!-- BANNIÈRE avec image -->
-  <section class="page-title2-blur position-relative text-center">
+  <!-- BANNIÈRE avec image + titre + date + fil d’Ariane -->
+  <section class="page-title-blur position-relative text-center">
     <div class="container py-5">
 
       <!-- Image illustrative -->
       <img src="assets/img/portfolio/books-3.jpg" alt="Bannière de l'article" class="img-fluid rounded shadow mb-4" style="max-height: 400px; object-fit: cover; width: 100%;">
 
+      <!-- Breadcrumbs -->
+      <nav class="d-flex justify-content-center mb-2" aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent p-0 m-0">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item"><a href="index.html#blog-carousel">Actus</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Article</li>
+        </ol>
+      </nav>
+
       <!-- Titre de l'article -->
-      <h1 class="project-title fw-bold mb-3">Réinventer la relation citoyen-mairie grâce au numérique</h1>
+      <h1 class="project-title fw-bold mb-1">Réinventer la relation citoyen-mairie grâce au numérique</h1>
+
+      <!-- Date -->
+      <p class="text-muted small mb-3"><i class="bi bi-calendar-event me-1"></i>Publié le 15 juillet 2025</p>
+
+      <!-- Sous-titre -->
       <div class="underline-accent mx-auto mb-3"></div>
       <p id="project-subtract">Comment une plateforme municipale peut améliorer la transparence, la proximité et l'efficacité des services publics locaux.</p>
 
@@ -118,11 +132,19 @@
           </p>
         </div>
 
+        <!-- CTA discret -->
+        <div class="text-center mt-5">
+          <a href="index.html#portfolio" class="btn btn-pycode">
+            ← Explorer nos projets
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
 </main>
+
 
 
 
