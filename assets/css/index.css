@@ -661,3 +661,7 @@
   color: var(--contrast-color);
   background: var(--accent-color);
 
+.btn-primary:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--yellow-accent), transparent 15%);
+}
