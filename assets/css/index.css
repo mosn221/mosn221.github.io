@@ -653,7 +653,7 @@
   margin-bottom: 0;
 }
 
-btn-primary {
+.btn-primary {
   background: var(--accent-color);
 }
 
