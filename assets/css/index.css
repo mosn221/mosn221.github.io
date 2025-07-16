@@ -573,6 +573,82 @@
   margin-bottom: 15px;
 }
 
+/*--------------------------------------------------------------
+# blog caroussel Section
+--------------------------------------------------------------*/
+
+.blog .swiper-slide article {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.blog .swiper-slide article:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog article {
+  background: var(--surface-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.blog .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 10px;
+}
+
+.blog .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.blog .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.blog .title a:hover {
+  color: var(--accent-color);
+}
+
+.blog .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.blog .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blog .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 0;
+}
+
+.blog-swiper .swiper-pagination {
+  margin-top: 30px;  /* Espace au-dessus des points */
+  position: relative; /* Important : rend le margin effectif */
+}
+
 .section-title p {
   margin-bottom: 0;
 }
