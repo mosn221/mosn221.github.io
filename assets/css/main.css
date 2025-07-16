@@ -271,7 +271,10 @@ section,
     }
 
 
-
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #007C91;
+}
 
 
 
