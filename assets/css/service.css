@@ -4,3 +4,63 @@
   font-weight: 600;
   font-size: 1.05rem;
 }
+
+/*--------------------------------------------------------------
+# hero Section service-detail
+--------------------------------------------------------------*/
+
+.hero-section {
+  background-image: url('/img/portfolio/books-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+
+ .hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/*--------------------------------------------------------------
+# section
+--------------------------------------------------------------*/
+
+
+.section-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--heading-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+ .section-paragraph {
+  font-family: 'Poppins', sans-serif;
+  color: var(--default-color);
+  font-size: 1rem;
+}
