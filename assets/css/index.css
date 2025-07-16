@@ -653,3 +653,7 @@
   margin-bottom: 0;
 }
 
+btn-primary {
+  background: var(--accent-color);
+}
+
