@@ -54,9 +54,8 @@
 
 .section-heading {
   font-family: 'Montserrat', sans-serif;
-  color: var(--heading-color);
-  font-size: 2rem;
-  font-weight: 600;
+  color: #007C91;
+  font-size: 2.3rem;
 }
 
  .section-paragraph {
