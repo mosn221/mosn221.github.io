@@ -1,0 +1,7 @@
+.quote-box {
+  padding: 1rem 1.5rem;
+  background: #f0eee9;
+  border-left: 4px solid #FFC300;
+  font-style: italic;
+  border-radius: 6px;
+}
