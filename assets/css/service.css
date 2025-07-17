@@ -27,7 +27,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 85%; /* Largeur réduite centrée */
+  width: 83%; /* Largeur réduite centrée */
   height: 100%;
   background-color: #007C91; /* OU un fond coloré si tu veux */
   background-size: cover;
