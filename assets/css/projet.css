@@ -161,15 +161,5 @@
   border-bottom-right-radius: 16px;
 }
 
-.page-projet .project-image-container {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
 
-.page-projet .project-image-container img {
-  max-height: 100%;
-  width: auto;
-  object-fit: contain;
-}
 
