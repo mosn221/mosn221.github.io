@@ -279,14 +279,15 @@ section,
 
 /* Survol */
 .btn-pycode:hover {
-  background-color: #FFC300; /* jaune solaire */
-  color: #1A1A2E; /* texte foncé pour contraste */
+  background: color-mix(in srgb, var(--yellow-accent), transparent 15%);
+  color: var(--contrast-color);
+  
 }
 
 /* Clic (état actif) */
 .btn-pycode:active {
-  background-color: #e6b100; /* jaune légèrement plus foncé */
-  color: #1A1A2E;
+  background: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .card-title {
