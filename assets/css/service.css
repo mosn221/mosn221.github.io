@@ -18,17 +18,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
- .hero-section::before {
+.hero-section::before {
   content: "";
-   position: absolute;
+  position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Largeur réduite centrée */
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  margin : 0 auto;
+  background-image: url('assets/img/portfolio/deco-banner.png'); /* OU un fond coloré si tu veux */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Transparence de l’image ou couleur */
+  border-radius: 20px;
+  z-index: 1; /* Le ::before sera juste derrière le contenu */
 }
 
 .hero-section .container {
