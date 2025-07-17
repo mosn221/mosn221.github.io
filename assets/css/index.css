@@ -249,7 +249,7 @@
   right: 0;
   bottom: 10px;
   height: 10px;
-  background: color-mix(in srgb, var(--accent-color), transparent 30%);
+  background: color-mix(in srgb, var(--yellow-accent), transparent 30%);
   z-index: -1;
 }
 
