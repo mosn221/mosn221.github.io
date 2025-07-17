@@ -268,7 +268,26 @@ section,
       padding: 10px 20px;
       transition: 0.3s;
     }
+/* Style normal */
+.btn-pycode {
+  background-color: #007C91;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+/* Survol */
+.btn-pycode:hover {
+  background-color: #FFC300; /* jaune solaire */
+  color: #1A1A2E; /* texte foncé pour contraste */
+}
+
+/* Clic (état actif) */
+.btn-pycode:active {
+  background-color: #e6b100; /* jaune légèrement plus foncé */
+  color: #1A1A2E;
+}
 
 .card-title {
   font-family: 'Montserrat', sans-serif;
