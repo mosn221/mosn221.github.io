@@ -159,11 +159,3 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-
-.page-projet .image-limited-height {
-  max-height: 400px; /* adapte cette valeur à ton besoin */
-  width: 100%;
-  object-fit: cover;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
