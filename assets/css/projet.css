@@ -159,3 +159,7 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
+
+.mb-xxs {
+  margin-bottom: 2px;
+}
