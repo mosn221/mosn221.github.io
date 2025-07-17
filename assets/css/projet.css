@@ -161,8 +161,16 @@
 
 .nav-tabs {
   overflow-x: auto;
+  overflow-y: hidden; /* empêche la scrollbar verticale */
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Cache scrollbar dans WebKit (Chrome, Safari) */
+.nav-tabs::-webkit-scrollbar {
+  display: none;
+}
 }
 .nav-tabs .nav-item {
   white-space: nowrap;
