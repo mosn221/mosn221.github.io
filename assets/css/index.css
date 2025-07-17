@@ -239,19 +239,22 @@
 .call-to-action .content h3 em {
   font-style: normal;
   position: relative;
+  display: inline-block; /* 🔑 pour que le ::after suive la largeur complète */
   z-index: 1;
 }
 
-.call-to-action .content h3 em:after {
+.call-to-action .content h3 em::after {
   content: "";
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: 10px;
-  height: 10px;
+  bottom: 0; /* touche la base du texte */
+  width: 100%;
+  height: 0.6em; /* ajustable : plus large si besoin */
   background: color-mix(in srgb, var(--yellow-accent), transparent 30%);
   z-index: -1;
+  border-radius: 4px; /* optionnel pour un arrondi doux */
 }
+
 
 .call-to-action .content p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
