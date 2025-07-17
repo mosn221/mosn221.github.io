@@ -42,17 +42,8 @@
       color: #1A1A2E;
       /* min-height: 238px; */ /* à commenter ou supprimer */
     }
-    .page-projet .btn-pycode {
-      background-color: #007C91;
-      color: white;
-      border-radius: 8px;
-      padding: 10px 20px;
-      transition: 0.3s;
-    }
-   .page-projet .btn-pycode:hover {
-      background-color: #00BFA6;
-      color: white;
-    }
+ 
+
    .page-projet .cta-section {
       background-color: #f0eee9;
       color: #F0EEE9;
