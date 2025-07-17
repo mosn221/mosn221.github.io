@@ -162,4 +162,5 @@
 
 .mb-xxs {
   margin-bottom: 1px;
+  background: rgba(255, 0, 0, 0.1);
 }
