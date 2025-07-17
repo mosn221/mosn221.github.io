@@ -161,7 +161,15 @@
   border-bottom-right-radius: 16px;
 }
 
-.mb-xxs {
-  margin-bottom: 2px !important;
-  background: rgba(255, 0, 0, 0.1);
+.page-projet .project-image-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
+
+.page-projet .project-image-container img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
