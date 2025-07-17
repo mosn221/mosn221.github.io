@@ -653,13 +653,7 @@
   margin-bottom: 0;
 }
 
-.btn-primary {
-  background: var(--accent-color);
-}
 
-.btn-primary:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
 
 .btn-primary:focus:hover {
   color: var(--contrast-color);
