@@ -99,7 +99,16 @@ h6 {
   line-height: 1;
 }
 
-.header .btn-getstarted,
+.header .btn-getstarted {
+  background-color: #007C91;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
 .header .btn-getstarted:focus {
   color: var(--default-color);
   background: var(--accent-color);
