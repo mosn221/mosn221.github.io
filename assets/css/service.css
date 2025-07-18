@@ -106,16 +106,20 @@
   color: #f0eee9;
 }
 
-.btn-pycode {
-  background-color: var(--accent-color);
-  color: white;
-  border-radius: 8px;
-  padding: 10px 20px;
-  transition: 0.3s;
-}
 
-.btn-pycode:hover {
-  background: var(--yellow-accent);
-  color: var(--default-color);
-}
 
+@media screen and (max-width: 768px) {
+  .hero-section-modern {
+    height: auto;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
