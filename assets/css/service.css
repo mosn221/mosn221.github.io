@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 .hero-section {
-  background-image: url('assets/img/portfolio/books-2.jpg');
+  background-image: url('../img/portfolio/books-2.jpg');
   background-size: cover;
   background-position: center;
   height: 35vh;
@@ -72,7 +72,7 @@
 }
 
 .hero-section-modern {
-  background-image: url('assets/img/portfolio/books-2.jpg'); /* mets ici ton image moderne */
+  background-image: url('../img/portfolio/app-2.jpg'); /* mets ici ton image moderne */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
