@@ -52,12 +52,21 @@
     </div>
   </header>
 
-  <section class="hero-section">
-    <div class="container">
-      <h1 class="display-5 fw-bold">Contribuez à l'impact</h1>
-      <p class="lead">Participez à des projets utiles à l'Afrique et à la communauté avec PyCodeGroup</p>
-    </div>
-  </section>
+ <section class="hero-contribuer d-flex align-items-center">
+  <div class="container text-center text-white" data-aos="fade-up">
+    <h1 class="hero-title mb-3">
+      <i class="bi bi-people-fill me-2 text-warning"></i>
+      Contribuer à notre aventure collective
+    </h1>
+    <p class="hero-subtitle fs-5 mb-4">
+      Partagez vos idées, soutenez nos projets, ou rejoignez une initiative qui vous tient à cœur.
+    </p>
+    <a href="#tabs-contribuer" class="btn btn-pycode">
+      <i class="bi bi-arrow-down-circle"></i> Je contribue
+    </a>
+  </div>
+</section>
+
 
   <main class="py-5">
     <div class="container">
@@ -70,7 +79,16 @@
         <!-- Rejoindre un projet -->
         <div class="tab-pane fade show active" id="projet">
           <h3>Rejoindre un projet existant</h3>
-          <form>
+          <form name="formulaire-projet" method="POST" data-netlify="true">
+             <div class="mb-3">
+    <label for="nom-rejoindre">Nom</label>
+    <input type="text" class="form-control" id="nom-rejoindre" name="nom" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email-rejoindre">Email</label>
+    <input type="email" class="form-control" id="email-rejoindre" name="email" required>
+  </div>
             <div class="mb-3">
               <label class="form-label">Projet</label>
               <select class="form-select">
@@ -96,7 +114,16 @@
         <!-- Devenir partenaire -->
         <div class="tab-pane fade" id="partenariat">
           <h3>Soumettre un partenariat ou des données</h3>
-          <form>
+          <form name="formulaire-partenariat" method="POST" data-netlify="true">
+            <div class="mb-3">
+    <label for="nom-partenaire">Nom</label>
+    <input type="text" class="form-control" id="nom-partenaire" name="nom" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email-partenaire">Email</label>
+    <input type="email" class="form-control" id="email-partenaire" name="email" required>
+  </div>
             <div class="mb-3">
             <label class="form-label">Type de partenariat</label>
             <select class="form-select" id="typePartenariat">
