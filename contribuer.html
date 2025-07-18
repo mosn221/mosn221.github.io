@@ -139,13 +139,8 @@
             </select>
              
           </div>
-             <div id="note-financier" class="alert alert-warning mt-3 d-none">
-  Pour un soutien institutionnel ou financier, vous pouvez simplement nous écrire sans fichier joint.
-</div>
-              <div id="file-upload-group" class="mb-3">
-  <label for="fichier">Fichier joint (optionnel)</label>
-  <input type="file" class="form-control" id="fichier" name="fichier">
-</div>
+     
+    
           <div class="mb-3 d-none" id="note-financier">
             <div class="alert alert-info">
               🙏 Merci pour votre intention de soutien. Nous prendrons contact avec vous personnellement pour organiser cela en toute simplicité et confiance.
@@ -286,29 +281,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script>AOS.init();</script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const typeSelect = document.getElementById("type");
-    const noteFinancier = document.getElementById("note-financier");
-    const fileUploadGroup = document.getElementById("file-upload-group");
 
-    function toggleFileUploadVisibility() {
-      const selected = typeSelect.value;
-      if (selected === "financier") {
-        noteFinancier.classList.remove("d-none");
-        fileUploadGroup.classList.add("d-none");
-      } else {
-        noteFinancier.classList.add("d-none");
-        fileUploadGroup.classList.remove("d-none");
-      }
-    }
-
-    // Initial state
-    toggleFileUploadVisibility();
-
-    // On change
-    typeSelect.addEventListener("change", toggleFileUploadVisibility);
-  });
-</script>
 </body>
 </html>
