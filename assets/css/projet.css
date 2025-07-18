@@ -175,3 +175,21 @@
 .nav-tabs .nav-item {
   white-space: nowrap;
 }
+
+.page-projet .btn-social {
+  background-color: #007C91;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.page-projet .btn-social:hover,
+.page-projet .btn-social:focus,
+.page-projet .btn-social:active {
+  background-color: var(--yellow-accent);
+  color: var(--default-color);
+}
+
