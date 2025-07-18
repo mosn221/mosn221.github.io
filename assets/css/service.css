@@ -91,3 +91,8 @@
     font-size: 1rem;
   }
 }
+
+.hero-section-modern {
+  margin-bottom: 40px; /* espace sous la bannière */
+}
+
