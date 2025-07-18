@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .hero-section {
-  background-image: url('/img/portfolio/books-2.jpg');
+  background-image: url('../img/portfolio/books-2.jpg');
   background-size: cover;
   background-position: center;
   height: 35vh;
