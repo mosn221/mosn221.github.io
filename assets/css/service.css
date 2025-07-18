@@ -9,38 +9,6 @@
 # hero Section service-detail
 --------------------------------------------------------------*/
 
-.hero-section {
-  background-image: url('../img/portfolio/books-2.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 35vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 85%; /* Largeur réduite centrée */
-  height: 100%;
-  background-color: #007C91; /* OU un fond coloré si tu veux */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Transparence de l’image ou couleur */
-  border-radius: 20px;
-  z-index: 1; /* Le ::before sera juste derrière le contenu */
-}
-
-.hero-section .container {
-  position: relative;
-  z-index: 2;
-}
 
 .hero-title {
   font-family: 'Montserrat', sans-serif;
