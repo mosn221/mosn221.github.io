@@ -182,15 +182,18 @@
             <label for="email-partenaire">Email</label>
             <input type="email" class="form-control" id="email-partenaire" name="email" required>
           </div>
-          <div class="mb-3">
-            <label>Type de partenariat</label>
-            <select class="form-select" id="typePartenariat" name="type_partenariat">
-              <option value="">Choisissez une option</option>
-              <option value="collaboratif">Projet collaboratif</option>
-              <option value="institutionnel">Soutien institutionnel / financier</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
+        <div class="mb-3">
+  <label>Type de partenariat</label>
+  <select class="form-select" id="typePartenariat" name="type_partenariat" required>
+    <option value="">-- Sélectionnez une option --</option>
+    <option value="institutionnel">Soutien institutionnel</option>
+    <option value="financier">Soutien financier</option>
+    <option value="media">Partenariat média / visibilité</option>
+    <option value="logistique">Partenariat logistique / technique</option>
+    <option value="academique">Partenariat académique / recherche</option>
+    <option value="autre">Autre</option>
+  </select>
+</div>
           <div class="mb-3 d-none" id="note-financier">
             <div class="alert alert-info">
               🙏 Merci pour votre intention de soutien. Nous prendrons contact avec vous personnellement pour organiser cela en toute simplicité et confiance.
@@ -333,7 +336,7 @@
 
     if (typePartenariat) {
       typePartenariat.addEventListener("change", function () {
-        noteFinancier.classList.toggle("d-none", this.value !== "institutionnel");
+        noteFinancier.classList.toggle("d-none", this.value !== "financier");
       });
     }
   });
