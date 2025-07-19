@@ -30,45 +30,20 @@
   text-align: justify;
 }
 
-/* Style par défaut (desktop) */
 .page-article .btn-social {
   background-color: #007C91;
-  color: white;
+  color: #ffffff;
   border: none;
-  border-radius: 50%;         /* cercle */
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+  border-radius: 6px;
   transition: all 0.3s ease;
+  font-size: 1rem;
+  padding: 8px 12px;
 }
 
-/* Au hover : fond jaune, icône noire */
 .page-article .btn-social:hover,
-.page-article .btn-social:focus {
-  background-color: #FFC300;
-  color: #000000;
+.page-article .btn-social:focus,
+.page-article .btn-social:active {
+  background-color: var(--yellow-accent);
+  color: var(--default-color);
 }
-
-/* Icône centrée */
-.page-article .btn-social i {
-  line-height: 1;
-  font-size: 1.1rem;
-}
-
-/* ✅ Version mobile */
-@media (max-width: 576px) {
-  .page-article .btn-social {
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
-  }
-
-  .page-article .btn-social i {
-    font-size: 1rem;
-  }
-}
-
 
