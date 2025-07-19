@@ -16,46 +16,8 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/nav.css" rel="stylesheet">
   <link href="assets/css/footer.css" rel="stylesheet">
-
-  <style>
-    .merci-container {
-      max-width: 700px;
-      margin: 100px auto;
-      padding: 40px;
-      background-color: var(--surface-color);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-      text-align: center;
-    }
-
-    .merci-container h1 {
-      font-family: 'Montserrat', sans-serif;
-      color: var(--accent-color);
-      font-size: 2.5rem;
-    }
-
-    .merci-container p {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.1rem;
-      margin-top: 15px;
-    }
-
-    .merci-container a.btn-pycode {
-      margin-top: 30px;
-      display: inline-block;
-      background-color: var(--accent-color);
-      color: white;
-      padding: 12px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .merci-container a.btn-pycode:hover {
-      background-color: var(--yellow-accent);
-      color: var(--default-color);
-    }
-  </style>
+<link href="assets/css/merci.css" rel="stylesheet">
+ 
 </head>
 
 <body>
@@ -83,22 +45,23 @@
   <!-- Contenu Merci -->
   <main>
     <div class="merci-container">
-      <h1>🙏 Merci pour votre message !</h1>
-      <p>Votre contribution a bien été envoyée.</p>
-      <p>Nous prendrons contact avec vous si nécessaire, ou pour donner suite à votre proposition.</p>
+     <h1>✅ Votre message a bien été envoyé</h1>
+    <p>Merci de nous avoir contactés. Nous allons analyser votre demande.</p>
+    <p>Un membre de notre équipe reviendra vers vous dans les meilleurs délais.</p>
+
       <a href="index.html" class="btn-pycode"><i class="bi bi-arrow-left-circle me-1"></i> Retour à l’accueil</a>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
+
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo-footer3.svg" alt="">
-            </a>
+             <a href="index.html" class="logo d-flex align-items-center">
+           <img src="assets/img/logo-footer3.svg" alt="">
+        </a>
             <div class="footer-contact pt-3">
               <p>Hann, Dakar</p>
               <p>Sénégal</p>
@@ -106,42 +69,77 @@
               <p>Email : <span>pycodegroup@gmail.com</span></p>
             </div>
           </div>
+
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Liens utiles</h4>
             <ul>
               <li><a href="index.html#hero">Bienvenue</a></li>
-              <li><a href="index.html#about">À propos</a></li>
+              <li><a href="index.html#about">A propos</a></li>
               <li><a href="index.html#portfolio">Projets</a></li>
               <li><a href="index.html#services">Activités</a></li>
             </ul>
           </div>
+
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Ressources</h4>
+            <h4>Nos activités</h4>
             <ul>
-              <li><a href="mentions_legales.html">Mentions légales</a></li>
-              <li><a href="conditions.html">Conditions</a></li>
-              <li><a href="cookies.html">Cookies</a></li>
-              <li><a href="donnees.html">Données personnelles</a></li>
+              <li><a href="service-digitalisation.html">Open Data</a></li>
+              <li><a href="service-digitalisation.html">Innovation</a></li>
+              <li><a href="service-digitalisation.html">Digitalisation</a></li>
+              <li><a href="service-digitalisation.html">Formation</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-12 footer-links">
-            <h4>Suivez-nous</h4>
-            <div class="social-links">
-              <a href="https://x.com/pycodegroup"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://github.com/pycodegroup"><i class="bi bi-github"></i></a>
-              <a href="https://instagram.com/pycodegroup"><i class="bi bi-instagram"></i></a>
-              <a href="https://linkedin.com/company/pycodegroup"><i class="bi bi-linkedin"></i></a>
-            </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Projets récents</h4>
+            <ul>
+              <li><a href="projet-digital.html">Sunugoal</a></li>
+              <li><a href="projet-digital.html">Machrabu chafi</a></li>
+              <li><a href="projet-digital.html">Nutritech</a></li>
+              <li><a href="projet-digital.html">byMadhi</a></li>
+            </ul>
           </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Termes & services</h4>
+            <ul>
+              <li><a href="mentions_legales.html">Mentions légales</a></li>
+              <li><a href="conditions.html">Conditions générales</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="donnees.html">Vos données personnelles</a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
+
     <div class="copyright text-center">
-      <div class="container">
-        © <strong>PyCodeGroup</strong> 2025 – Tous droits réservés
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © <strong><span>PyCode Group</span></strong> 2025
+          </div>
+          <div class="credits" class="small text-muted">
+           
+            Adapté avec 💡 à partir de <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/" target="_blank">HeroBiz</a>
+          </p>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="https://x.com/pycodegroup"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://github.com/pycodegroup"><i class="bi bi-github"></i></a>
+          <a href="https://instagram.com/pycodegroup"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com/company/pycodegroup"><i class="bi bi-linkedin"></i></a>
+        </div>
+
       </div>
     </div>
+
   </footer>
+
 
   <!-- JS (même setup que sur le site) -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
