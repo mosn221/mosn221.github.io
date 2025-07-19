@@ -30,3 +30,15 @@
   text-align: justify;
 }
 
+@media (max-width: 576px) {
+  .social-share .btn-share {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 1;
+    padding: 0;
+  }
+}
+
