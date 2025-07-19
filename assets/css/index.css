@@ -617,3 +617,31 @@
   margin-top: 0.5rem;
 }
 
+.contact-shortcut {
+  background-color: #f5f7fa;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background-color: #FFC300; /* jaune solaire */
+  color: #1A1A2E; /* bleu très foncé */
+}
+.link-underline {
+  text-decoration: underline;
+  color: #007C91;
+  font-weight: 500;
+}
+
+.link-underline:hover {
+  color: #00BFA6;
+}
