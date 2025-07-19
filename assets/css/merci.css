@@ -1,0 +1,39 @@
+ <style>
+    .merci-container {
+      max-width: 700px;
+      margin: 100px auto;
+      padding: 40px;
+      background-color: var(--surface-color);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .merci-container h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--accent-color);
+      font-size: 2.5rem;
+    }
+
+    .merci-container p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      margin-top: 15px;
+    }
+
+    .merci-container a.btn-pycode {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .merci-container a.btn-pycode:hover {
+      background-color: var(--yellow-accent);
+      color: var(--default-color);
+    }
+  </style>
