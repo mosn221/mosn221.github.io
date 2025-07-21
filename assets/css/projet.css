@@ -41,6 +41,7 @@
    .page-projet .tab-content p {
       color: #1A1A2E;
       /* min-height: 238px; */ /* à commenter ou supprimer */
+     text-align : justify;
     }
  
 
