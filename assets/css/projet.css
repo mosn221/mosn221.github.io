@@ -96,7 +96,7 @@
 }
 
 .page-projet .page-title-blur {
-  background-image: url('../img/portfolio/books-3.jpg'); /* Mets ici ton image */
+   /* Mets ici ton image */
   background-size: cover;
   background-position: center;
   position: relative;
